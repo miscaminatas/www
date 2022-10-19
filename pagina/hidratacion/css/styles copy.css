@@ -1,0 +1,1362 @@
+@font-face {
+    font-family: 'NeoBold';
+    src: url('../fonts/NeoBold.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'LoveloBlack';
+    src: url('../fonts/LoveloBlack.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NeoBold';
+    src: url('../fonts/NeoBold.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NeoBlack';
+    src: url('../fonts/NeoBlack.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'NeoRegular';
+    src: url('../fonts/NeoRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NeoLight';
+    src: url('../fonts/NeoLight.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NeoMedium';
+    src: url('../fonts/NeoMedium.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NeoUltra';
+    src: url('../fonts/NeoUltra.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+  background: rgb(181, 217, 203);
+  margin: 0;
+  padding: 0;
+  max-height: 35500px;
+  -webkit-font-smoothing: antialiased;
+  -khtml-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+   font-smoothing: antialiased;     
+  text-rendering: geometricPrecision;
+}
+
+tspan{
+    font-family: 'NeoMedium' !important;
+}
+
+#bgText{background:url(../images/textNoise.png); position: fixed; z-index: 1; width: 100%; height: 100%;  
+background-blend-mode: multiply; 
+} 
+
+div#preloader { position: fixed; left: 0; top: 0; z-index: 700000; width: 100%; height: 100%; overflow: visible; background: #4c4451 url('../images/loader.gif') no-repeat center center; }
+
+#height{ position: fixed; top: 0; right: 0; width: 150px; height: 50px; background: white; display: block; z-index: 15000; color: black;}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 40%;
+  margin: 0 auto;
+  left: 50%;
+  height: 650px;
+  text-align: center;
+  width: 800px;
+  margin-left: -400px;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  display: block;
+  height: 700px;
+}
+
+
+
+/*MENU*/
+#menu{z-index: 800002; display: none}
+
+.app-nav {
+position: fixed;
+width: 70px;
+top: 0;
+right: 0;
+bottom: 0;
+height: 100%;
+
+}
+
+
+
+
+.app-nav ul {
+position: relative;
+}
+
+.app-nav li {
+display: inline-block;
+margin-bottom: 7px;
+}
+
+.app-nav li a, .app-nav li a.notClicked{
+display: block;
+height: 16px;
+width: 16px;
+border: none;
+background: #5ba4c2;
+-webkit-border-radius:50%;
+-moz-border-radius: 50%;
+-khtml-border-radius: 50%;
+border-radius: 50%;
+   font-smoothing: antialiased;         
+    
+border-radius: 50%;
+margin: 0;
+position: relative;
+}
+
+
+
+
+
+
+.app-nav li a:hover, .app-nav li a.active {
+display: block;
+height: 11px;
+width: 11px;
+border: none;
+background: #FFF;
+ -webkit-border-radius:50%;
+-moz-border-radius: 50%;
+-khtml-border-radius: 50%;   
+border-radius: 50%;
+margin: 0;
+margin-top: -1px;
+/* padding: 0; */
+border: 3px solid #5ba4c2;
+padding: 0;
+background: transparent;
+}
+
+
+.app-nav li a h3{
+display: none;
+width: 200px;
+height: 16px;
+position: absolute;
+top: -16px;
+font-size: 14px;
+color: #5ba4c2;
+line-height: 21px;
+text-align: right;
+right: 24px;
+   pointer-events: none;
+   cursor: default;
+   font-family: 'LoveloBlack', Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.app-nav li a:hover h3, .app-nav li a.active h3{
+display: block;
+width: 200px;
+height: 16px;
+position: absolute;
+top: -18px;
+font-size: 14px;
+color: #5ba4c2;
+line-height: 21px;
+text-align: right;
+right: 22px;
+   pointer-events: none;
+   cursor: default;
+}
+
+
+
+
+/*INTRO*/
+
+#intro{position: relative; margin-top:3%; opacity: 1}
+
+
+#intro .container {
+  margin-left: -640px;
+  margin-top: -94px;
+}
+
+#Pelota{display:none}
+#Luna{display:none}
+#Sol{display:none}
+#NubeNoche1{display:none}
+#NubeNoche2{display:none}
+#NubeDia1{display:none}
+#NubeDia2{display:none}
+
+
+#Gota_Noche{  transform-origin: top center;}
+
+#Lousteau{  transform-origin: bottom left;}
+
+#hidratacion_title{ transform-origin: center center; }
+
+/*EL AGUA Y EL CUERPO*/
+
+#personaje_fill{  position: absolute;
+  left: 50%;
+  top: 220px;
+  margin-left: -38px;
+  display: none;
+  opacity: 0;}
+
+
+
+#personaje_stroke {
+  position: absolute;
+  left: 50%;
+  top: 220px;
+  margin-left: -38px;
+  display: none;
+  opacity: 0;
+
+}
+
+#scrollDownIntro {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 207px;
+  left: 50%;
+  width: 78px;
+  display: none;
+  top: 634px;
+  -webkit-animation-delay: 1.3s;
+  -ms-animation-delay: 1.3s;
+-moz-animation-delay: 1.3s;
+-khtml-animation-delay: 1.3s;   
+    animation-delay: 1.3s;
+    
+}
+
+#Chrome {
+  position: absolute;
+  left: 50%;
+  top: 19px;
+  margin-left: -410px;
+  -webkit-animation-delay: 1.3s;
+  -ms-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  -khtml-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+  display: block;
+  z-index: 200;
+}
+
+
+#personaje_fill{
+display: none;
+opacity: 0;
+position: absolute;
+left: 0;
+top: 250px;
+    
+        /*Chrome,Safari*/
+-webkit-clip-path: url(../images/mask.png);
+  -ms-clip-path: url(../images/mask.png);
+-moz-clip-path: url(../images/mask.png);
+-khtml-clip-path: url(../images/mask.png);
+
+/* Firefox*/
+    
+clip-path: url(../images/mask.png);
+
+/* iOS support */
+-webkit-mask: url('../images/mask.png');
+  mask: url('../images/mask.png');
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: center;
+    
+  -ms-mask: url('../images/mask.png');
+-moz-mask: url('../images/mask.png');
+-khtml-mask: url('../images/mask.png'); 
+    
+  -ms-mask-size: 100% 100%;
+-moz-mask-size: 100% 100%;
+-khtml-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    
+      -ms-mask-position: center;
+-moz-mask-position: center;
+-khtml-mask-position: center;
+  mask-position: center;
+    
+
+}
+
+#wave02 {
+
+mask-image: url('../images/personaje_mask.svg');
+  mask-origin: 0,0;    
+    
+ -webkit-mask-image: url('../images/personaje_mask.svg');
+  -webkit-mask-origin: 0,0;
+    
+    
+-ms-mask-image: url('../images/personaje_mask.svg');
+-moz-mask-image: url('../images/personaje_mask.svg');
+-khtml-mask-image: url('../images/personaje_mask.svg');
+
+-ms-mask-origin: 0,0;    
+-moz-mask-origin: 0,0; 
+-khtml-mask-origin: 0,0;   
+    
+    
+  position: fixed;
+  top: 44px;
+  left: 50%;
+    
+ padding: 523px 0px;                                          
+  margin-left: -634px;
+    
+  transition: padding 0.8s linear;    
+
+}
+
+#waveFirefox{display: none !important}
+
+
+
+
+
+
+
+#personaje_somos {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  margin-left: -633px;
+  display: none;
+}
+#personaje_naked {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  margin-left: -633px;
+  display: none;
+}
+
+
+#somos_title{
+    position: absolute;
+    left: 50%;
+    margin-left: -633px;
+    position: fixed;
+    display: block;
+}
+
+#textos_naked {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+  /* display: none; */
+}
+
+#textosNakedCelulas {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+   display: none;
+}
+
+#dos_tercios {
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  top: 357px;
+  z-index: 10;
+  display: none;
+}
+
+@keyframes time {
+  to {
+    transform: rotate(360deg);
+      
+  }
+}
+
+
+
+
+#clock{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#cerebroStroke {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  margin-left: -633px;
+  display: none;
+}
+
+#cerebroLupa {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  margin-left: -672px;
+  display: none;
+}
+
+#personaje_container #lupa { 
+  display: none;
+  left: -50%;
+  top: 80px;
+  -webkit-transform: rotate(65deg);
+  transform: rotate(65deg);
+    
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -khtml-transform: rotate(65deg);     
+    
+  width: 110px;
+  margin-top: 800px;
+  margin-left: -680px;
+  width: 800px;
+}
+
+
+
+
+
+
+/*
+
+ZOOM IN
+*/
+
+
+#zoomIn{position: fixed; top: 0; opacity: 1; z-index: 300}
+
+#cerebro_zoom{
+background: #a0d2ca;
+z-index: 2;
+overflow: hidden;
+position: absolute;
+display: block;
+background-size: 215%;
+/*border: 15px solid #e2d4d4;*/
+}
+
+#infoCerebro{
+    position: absolute;
+    left: 50%;
+    margin-left: -633px;
+    display: none;
+    z-index: 200;
+    opacity: 0;
+}
+
+#CerebroBig{
+display: block;
+opacity: 1;
+}
+
+#Lousteau_Outline{
+  transform : translateY(0);
+  -webkit-transform : translateY(0);
+  -ms-transform : translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -khtml-transform: translateY(0);        
+    background-attachment:fixed;
+
+}
+
+
+
+#pulmones{
+    position: absolute;
+    left: 50%;
+    margin-left: -642px;
+    display: none;
+    z-index: 200;
+    opacity: 0;
+
+}
+
+#Pulmon{
+      transform-origin: center center;
+    opacity: 0;
+    display: none;
+      -webkit-transform-origin: center center !important;
+  -moz-transform-origin: center center !important;
+  -o-transform-origin: center center !important;
+  -ms-transform-origin: center center !important ;
+    
+}
+
+#corazon{
+    position: absolute;
+    left: 50%;
+    margin-left: -653px;
+    display: none;
+    z-index: 200;
+    opacity: 0;
+
+}
+
+#CorazonBig{
+    opacity: 0;
+    display: none;
+        transform-origin: center center !important;
+      -webkit-transform-origin: center center !important;
+  -moz-transform-origin: center center !important;
+  -o-transform-origin: center center !important;
+  -ms-transform-origin: center center !important;
+}
+
+#estomago {
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+  margin-top: 123px;
+  display: none;
+  z-index: 201;
+  opacity: 0;
+ 
+}
+
+#EstomagoBig{
+      transform-origin: center center;
+    opacity: 0;
+    display: none;
+}
+
+#intestino{
+    position: absolute;
+    left: 50%;
+    margin-left: -650px;
+    display: none;
+    z-index: 200000;
+    opacity: 0;
+
+}
+
+#IntestinoBig{
+      transform-origin: center center;
+    opacity: 0;
+    display: none;
+}
+
+
+#solVentana {
+  position: fixed;
+  width: 100%;
+  height: 700px;
+  z-index: 400;
+  left: 50%;
+  margin-left: -643px;
+  margin-top: -125px;
+  background: url(../images/sol_ventana.svg);
+mask: url(../images/ventana_mask.svg);
+
+
+}
+
+
+.ball {
+top: 50%;
+left: 50%;
+border-radius: 50%;
+}
+
+/*
+
+8VASOS
+*/
+
+#8vasos{position: fixed; opacity: 1; display: none;}
+
+#beberTitle{
+    position: fixed;
+    left: 50%;
+    margin-left: -653px;
+    display: none;
+    z-index: 101;
+    top:0;
+}
+
+#manana{    
+    position: fixed;
+    left: 50%;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:180px;
+}
+
+#textosManana {
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+    display: none;
+    
+  position: fixed;
+  /* display: none; */
+}
+
+#personajePijamaParado {
+  position: absolute;
+  left: 50%;
+  margin-left: -673px;
+  top: 50px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+#textosDucha01 {
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+    display: none;
+    
+  position: fixed;
+  /* display: none; */
+}
+
+#textosDucha02 {
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+    display: none;
+    
+  position: fixed;
+  /* display: none; */
+}
+
+#baño {
+  position: fixed;
+  left: 50%;
+  margin-left: -653px;
+  display: block;
+  z-index: 600;
+  top: 48px;
+}
+
+#personajeDucha{
+  position: absolute;
+  left: 50%;
+  margin-left: -673px;
+  top: 50px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+#rain {
+  background: url(../images/rain.svg);
+  position: fixed;
+  left: 50%;
+  top: 209px;
+  width: 60px;
+  margin-left: -75px;
+  height: 247px;
+  display: none;
+  visibility: hidden;
+  background-position: 0px 0px;
+  opacity: 1;
+}
+
+
+#Comida{
+  -webkit-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+-moz-animation-delay: 1s;
+-khtml-animation-delay: 1s;   
+    animation-delay: 1s;
+    
+}
+
+#textosAlmuerzo01 {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+  /* display: none; */
+}
+
+#textosAlmuerzo02 {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+  /* display: none; */
+}
+
+#almuerzo{    
+    position: fixed;
+    left: 50%;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:180px;
+}
+
+#LoustauAlmuerzo{    
+    position: fixed;
+    left: 50%;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:0;
+}
+
+#plazaScene{    
+    position: fixed;
+    left: 50%;
+    opacity: 1;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:0;
+}
+
+#sol {     position: fixed;
+    left: 50%;
+    opacity: 1;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:0;}
+
+#nube01{
+position: absolute;
+top:0;
+left: 0;
+
+}
+
+#personajePlaza{    
+    position: fixed;
+    left: 50%;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:0;
+}
+
+#textosPlaza01 {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+  /* display: none; */
+}
+
+#textosPlaza02 {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+  /* display: none; */
+}
+
+#nocheScene{    
+    position: fixed;
+    left: 50%;
+    margin-left: -653px;
+    display: block;
+    z-index: 100;
+    top:0;
+}
+
+#personajeNoche {
+  left: 50%;
+  margin-left: -652px;
+  top: 0px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+#textosNoche {
+  position: absolute;
+  left: 50%;
+  margin-left: -633px;
+  top: 0;
+  position: fixed;
+  /* display: none; */
+}
+
+#VasosBanner{
+  display: block;
+  top: 0px;
+  left: 50%;
+  margin-left: -640px;
+  position: fixed;
+}
+
+#personajeNoche {
+  left: 50%;
+  margin-left: -652px;
+  top: 0px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+#vasos {
+  left: 50%;
+  margin-left: -652px;
+  top: 0px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+
+#globaVasos02 {
+  left: 50%;
+  margin-left: -652px;
+  top: 0px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+#globaVasos03 {
+  left: 50%;
+  margin-left: -652px;
+  top: 0px;
+  display: none;
+  position: fixed;
+  z-index: 400;
+}
+
+#clock_8vasos {
+  left: 50%;
+  margin-left: -394px;
+  top: 121px;
+  display: block;
+  position: fixed;
+  z-index: 7000;
+}
+
+#hours {
+  transform-origin: bottom center;
+-webkit-transform-origin:bottom center;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: spin 12s infinite linear;
+  -moz-animation: none;
+  -o-animation: spin 12s infinite linear;
+  -ms-animation: spin 12s infinite linear;
+}
+
+
+#seconds {
+  transform-origin: bottom center;
+-webkit-transform-origin:bottom center; 
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: none;
+  -o-animation: spin 2s infinite linear;
+  -ms-animation: spin 2s infinite linear;
+}
+
+#minutes {
+  transform-origin: bottom center;
+-webkit-transform-origin:bottom center;
+    
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: spin 6s infinite linear;
+  -moz-animation: none;
+  -o-animation: spin 6s infinite linear;
+  -ms-animation: spin 6s infinite linear;
+}
+
+
+/*
+
+JARRA
+*/
+
+
+#cuantaAgua{position: fixed; opacity: 1; display: none;}
+
+
+#strokeJarra{    
+    position: fixed;
+    left: 50%;
+    margin-left: -640px;
+    display: block;
+    z-index: 100;
+    top:0;
+        z-index: 4001;
+}
+
+/*stroke-width="4" stroke-miterlimit="10"*/
+
+ @keyframes drawJarra {
+  from{}
+ 
+  to {
+stroke-dasharray:1300;
+  stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes drawJarra {
+  from{}
+ 
+  to {
+  stroke-dashoffset: 0;
+     stroke-dasharray: 1300;
+  }
+}
+
+
+
+
+
+.strokeJarra {
+
+
+  animation: drawJarra 3s forwards;
+  -webkit-animation: drawJarra 3s forwards;
+    -ms-animation: drawJarra 3s forwards;
+    -moz-animation: drawJarra 3s forwards;
+    -khtml-animation: drawJarra 3s forwards;    
+    
+    
+}
+
+
+#jarraVacia{    
+    position: fixed;
+    left: 50%;
+    margin-left: -640px;
+    display: block;
+    opacity: 0;
+    z-index: 4000;
+    top:0;
+}
+
+#jarraSafari{    
+    position: fixed;
+    left: 50%;
+    margin-left: -640px;
+    opacity: 0;
+    z-index: 320;
+    display: none;
+    top:0;
+}
+
+#cuantaAguaTitle{
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+}
+
+#nivel01, #nivel02, #nivel03, #nivel04, #nivel05, #nivel06  {
+  position: fixed;
+  left: 50%;
+  margin-left: -638px;
+  display: block;
+  z-index: 3990;
+  top: 0;
+
+}
+
+
+
+#nivel01Textos, #nivel02Textos{
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+    z-index: 5000;
+}
+
+#nivel02Textos{
+    z-index: 5024;
+}
+
+
+#textoJarraNivel01, #textoJarraNivel02, #textoJarraNivel03, #textoJarraNivel04, #textoJarraNivel05, #textoJarraNivel06 {
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 5001;
+}
+
+#textoJarraNivel02{
+      z-index: 5101;
+}
+
+#textoJarraNivel03{
+      z-index: 5201;
+}
+#textoJarraNivel04{
+      z-index: 5301;
+}
+#textoJarraNivel05{
+      z-index: 5401;
+}
+#textoJarraNivel06{
+      z-index: 5501;
+}
+#coke {
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 6000;
+}
+
+#cokeTexto {
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 6000;
+}
+
+
+/*
+
+POR QUE?
+*/
+
+#porQue{position: fixed; opacity: 1; display: none;}
+
+#cartelPorque{    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 7000;
+    
+}
+#porqueTitle{    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 7001;
+    
+}
+#doctora{    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 7002;
+    
+}
+#planillaStroke{   
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 7003;
+    
+}
+
+ @keyframes drawPlanilla {
+  from{}
+ 
+  to {
+stroke-dasharray:2000;
+  stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes drawPlanilla {
+  from{}
+ 
+  to {
+  stroke-dashoffset: 0;
+     stroke-dasharray: 2000;
+  }
+}
+
+#planilla{   
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 76001;
+}
+
+
+
+.strokePlanilla {
+
+
+  animation: drawPlanilla 3s forwards;
+  -webkit-animation: drawPlanilla 3s forwards;
+    -ms-animation: drawPlanilla 3s forwards;
+    -moz-animation: drawPlanilla 3s forwards;
+    -khtml-animation: drawPlanilla 3s forwards;       
+    
+}
+
+
+
+@-webkit-keyframes move {
+  to {
+    margin-left: 40px;
+  }
+}
+
+@keyframes move {
+  to {
+    margin-left: 40px;
+  }
+}
+
+
+#textosPlanilla01{
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 8000;
+}
+
+#textosPlanilla02{
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 8011;
+}
+
+
+/*CREDITOS*/
+
+#videoContainer{
+    left: 50%;
+    top: -15px;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 9000;
+
+}
+
+#videoSVG{
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 9000;
+
+}
+
+#gracias{
+    left: 50%;
+    top:-20px;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 9000;
+
+}
+
+
+#videoSVG #pathVideo{
+    width: 220px;
+
+    transform="scale(1,1)";
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -moz-transform-origin: 640px 325px 0px;
+    -khtml-transform-origin: center center;       
+    
+    -webkit-transform="scale(1,1)";
+    -ms-transform="scale(1,1)";
+    -moz-transform="scale(1,1)";
+    -khtml-transform="scale(1,1)";
+    
+    display: block;
+    
+}
+
+#socialNetwork {
+  left: 50%;
+  top: 500px;
+  width: 250px;
+  margin-left: -123px;
+  position: fixed;
+  display: none;
+  z-index: 9002;
+    transform-origin: center center;
+}
+
+#socialNetwork span{
+    display: block;
+    float: left;
+    margin-right: 5px;
+    
+}
+
+
+
+
+#backtoTop{
+    left: 50%;
+    top:550px;
+    margin-left: -640px;
+    position: fixed;
+    display: none;
+      z-index: 9000;
+
+}
+
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg);
+}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+
+@-khtml-keyframes spin {
+0% { -khtml-transform: rotate(0deg);}
+100% { -khtml-transform: rotate(360deg);}
+}
+
+
+
+/*
+
+FIREFOX
+*/
+
+@-moz-document url-prefix() { 
+#wave02 {
+  display: none !important;
+ }
+    
+    
+#waveFirefox{
+  left: 50%;
+  margin-left: -633px;
+  top: 44px;
+  position: fixed;
+  display: none;
+  opacity: 0;    
+
+}
+#dos_tercios{
+display:none !important;}    
+    
+}
+
+
+
+.pulse {
+    animation-name: none;
+}   
+  
+#pathVideo{
+transform-origin: center center;
+}
+
+#bgNoche rect{    
+-moz-transform: translate(0px, -280px);
+    }
+}
+
+@-webkit-keyframes move {
+  to {
+    margin-left: 40px;
+  }
+}
+
+@keyframes move {
+  to {
+    margin-left: 40px;
+  }
+}

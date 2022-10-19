@@ -1,0 +1,28 @@
+.navbar {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Open Sans", sans-serif;
+  .nav-item {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-right: 1rem;
+
+    @media screen and (max-width: 480px) {
+        padding-right: 0;
+    }
+
+    .nav-link {
+      color: $orange !important;
+      font-size: 1.2rem;
+      transition: color;
+
+      &:hover {
+        color: $green !important;
+      }
+    }
+  }
+  .btn-navbar {
+    @include botones($grey);
+    color: white;
+    background-color: $blue;
+  }
+}

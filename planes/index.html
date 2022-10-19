@@ -1,0 +1,2962 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0' name='viewport'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet'>
+<link href='/old/images/favicon.png' rel='icon' type='image/x-icon'>
+<title>
+Care Plans
+
+</title>
+<link href="../../old/stylesheets/all.css?1655406598" rel="stylesheet" type="text/css" async="true" />
+<script src='//use.typekit.net/brw1pwx.js' type='text/javascript'></script>
+<script>
+  try{Typekit.load();}catch(e){ }
+</script>
+<script>
+  document.documentElement.className = "";
+</script>
+<script src="../../old/javascripts/all.js?1655406667" type="text/javascript"></script>
+<link href="../../old/stylesheets/vendor/bootstrap.min.css?1655406461" rel="stylesheet" type="text/css" />
+<link href="../../old/stylesheets/features/careplans.css?1655406576" rel="stylesheet" type="text/css" />
+<link href="../../old/stylesheets/feature-elements.css?1655407040" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,700" rel="stylesheet" type="text/css" />
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script src="../../old/javascripts/vendor/jquery.js?1655406616" type="text/javascript"></script>
+<script src="../../old/javascripts/vendor/bootstrap.min.js?1655406620" type="text/javascript"></script>
+<script src="../../old/javascripts/features/careplans/tab.js?1655406648" type="text/javascript"></script>
+<script src="../../old/javascripts/features/careplans/svg.js?1655406649" type="text/javascript"></script>
+<script src="../../old/javascripts/features/careplans/careplans-scroll.js?1655406652" type="text/javascript"></script>
+<meta content='What is a care plan, and how did they start?' name='description'>
+<meta content='design future emerging technologies health mobile careplans care plan ui ux user experience medical records predictive health' name='keywords'>
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@goinvo' name='twitter:site'>
+<meta content='Care Plans: Part 1' name='twitter:title'>
+<meta content='What is a care plan, and how did they start?' name='twitter:description'>
+<meta content='http://www.goinvo.com/old/images/features/careplans/twitter_CP1.jpg' name='twitter:image'>
+
+</head>
+<body>
+<div id='fb-root'></div>
+<script>
+  (function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=564464970346249&version=v2.0";
+  	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id='page-wrapper'>
+<div class="twenty-eighteen">
+  <div class="header-nav" id="header">
+    <a href="http://www.goinvo.com" class="header-nav__link header-nav__logo">
+      <svg viewBox="0 0 64 35" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60.1895 19.1783C60.5875 19.7481 60.7832 20.5109 60.7832 21.4694C60.7832 23.0216 60.4421 24.3102 59.7623 25.3339C59.0786 26.3576 58.26 26.8688 57.2998 26.8688C56.6928 26.8688 56.1849 26.588 55.7763 26.0262C55.3676 25.4644 55.1613 24.7376 55.1613 23.8456C55.1613 22.352 55.5025 21.0567 56.1849 19.9624C56.8687 18.8695 57.678 18.3224 58.6197 18.3224C59.2703 18.3224 59.794 18.6086 60.1895 19.1783ZM54.4869 18.6325C53.3694 19.9704 52.8113 21.6344 52.8113 23.6246C52.8113 25.2261 53.2159 26.4774 54.0253 27.3774C54.8334 28.2773 55.9522 28.7272 57.3778 28.7272C58.9966 28.7272 60.3614 28.059 61.4696 26.7211C62.5792 25.3832 63.1333 23.6739 63.1333 21.5919C63.1333 20.0889 62.722 18.8868 61.8981 17.9816C61.0742 17.0777 59.9831 16.625 58.6183 16.625C56.9837 16.6264 55.6044 17.2946 54.4869 18.6325ZM50.4824 16.9725L46.6008 24.2077L44.9464 16.9725H42.6743L45.4397 28.5928H46.5783L52.8113 16.9725H50.4824ZM32.0613 16.9725L30.3593 28.3691H32.6247L33.7356 21.1113C33.7541 20.9848 34.0041 20.696 34.4841 20.2433C34.9655 19.7894 35.3689 19.4512 35.6956 19.2289C36.0222 19.0053 36.329 18.8402 36.6147 18.7337C36.9016 18.6259 37.1595 18.5726 37.3896 18.5726C37.7864 18.5726 38.117 18.7297 38.3815 19.0426C38.6447 19.3567 38.7796 19.8107 38.7796 20.4057C38.7796 20.6201 38.7558 20.8557 38.7135 21.1113L37.6039 28.3691H39.8706L41.0358 21.1858C41.0887 20.8717 41.1151 20.5708 41.1151 20.2819C41.1151 19.2569 40.8559 18.4222 40.3375 17.7739C39.8164 17.1256 39.0877 16.8008 38.1448 16.8008C36.7549 16.8008 35.4139 17.5436 34.1205 19.0306L34.0583 18.9906L34.3664 16.9738H32.0613V16.9725ZM26.7952 16.9725L25.0931 28.3691H27.385L29.0884 16.9725H26.7952ZM27.4353 14.2794C27.6945 14.523 28.0052 14.6429 28.3663 14.6429C28.7273 14.6429 29.0368 14.5217 29.296 14.2794C29.5565 14.0345 29.6861 13.7443 29.6861 13.4061C29.6861 13.0587 29.5565 12.7645 29.296 12.5209C29.0368 12.2759 28.7273 12.1548 28.3663 12.1548C28.0052 12.1548 27.6945 12.2772 27.4353 12.5209C27.176 12.7645 27.0464 13.0587 27.0464 13.4061C27.0464 13.7443 27.176 14.0358 27.4353 14.2794ZM15.3728 26.5533C14.8583 25.8891 14.6004 24.9772 14.6004 23.823C14.6004 22.1217 15.0012 20.6893 15.8013 19.5298C16.6027 18.369 17.6633 17.7899 18.9832 17.7899C19.9063 17.7899 20.6455 18.1253 21.1997 18.7989C21.7551 19.4712 22.0315 20.3791 22.0315 21.5173C22.0315 23.2013 21.5845 24.6284 20.6919 25.7972C19.7992 26.9647 18.7227 27.5491 17.465 27.5491C16.5842 27.5504 15.8859 27.2176 15.3728 26.5533ZM14.9377 18.7191C13.8678 20.0317 13.3335 21.725 13.3335 23.7964C13.3335 25.282 13.7276 26.4535 14.5145 27.3081C15.3027 28.1641 16.3038 28.5915 17.5178 28.5915C19.0837 28.5915 20.4392 27.9405 21.5832 26.6385C22.7271 25.3379 23.2985 23.6313 23.2985 21.5173C23.2985 20.0556 22.9136 18.8961 22.1439 18.0375C21.3743 17.1788 20.3374 16.7489 19.0361 16.7489C17.3711 16.7502 16.0062 17.4065 14.9377 18.7191ZM8.57381 32.7103C7.81205 33.1429 6.7144 33.3599 5.28081 33.3599C4.17124 33.3599 3.29576 33.1948 2.65435 32.8647C2.01162 32.5345 1.69024 32.0926 1.69024 31.5401C1.69024 30.7227 2.23776 30.0664 3.33279 29.5712C4.42914 29.076 5.29272 28.8284 5.9262 28.8284C6.14705 28.8284 6.83344 29.0081 7.98533 29.3689C9.13722 29.7283 9.71513 30.2754 9.71513 31.0089C9.71513 31.7105 9.33424 32.2776 8.57381 32.7103ZM9.04198 18.5087C9.66752 19.0545 9.97965 19.7441 9.97965 20.5774C9.97965 21.4614 9.65429 22.3067 9.0023 23.1161C8.35164 23.9242 7.4272 24.3302 6.23035 24.3302C5.33369 24.3302 4.61163 24.032 4.06676 23.4383C3.52057 22.8446 3.24815 22.1363 3.24815 21.319C3.24815 20.3378 3.61052 19.4859 4.33656 18.7683C5.06261 18.0508 5.909 17.69 6.87706 17.69C7.69569 17.6913 8.41776 17.9643 9.04198 18.5087ZM7.14158 16.7502C5.75957 16.7502 4.57594 17.1961 3.59068 18.0881C2.60543 18.98 2.11212 20.041 2.11212 21.2724C2.11212 23.0642 2.97969 24.2596 4.71348 24.8627V24.9119C3.04978 25.2021 2.2179 25.7719 2.2179 26.6212C2.2179 27.4559 3.04978 28.0297 4.71348 28.3438V28.3944C1.94153 29.0374 0.555542 30.0278 0.555542 31.3657C0.555542 32.1818 0.981368 32.8607 1.8357 33.3958C2.68871 33.9323 3.88954 34.1999 5.4395 34.1999C7.15478 34.1999 8.48523 33.8817 9.43213 33.2467C10.3777 32.6091 10.8512 31.837 10.8512 30.9304C10.8512 30.2289 10.5496 29.6311 9.94659 29.1399C9.34353 28.65 8.24451 28.2214 6.64693 27.8553C5.05068 27.4919 4.10245 27.2443 3.80225 27.1165C3.50336 26.9887 3.35394 26.785 3.35394 26.5054C3.35394 26.2418 3.51001 26.0129 3.82344 25.8198C4.13555 25.6255 4.8457 25.4564 5.9513 25.3113C7.05823 25.1675 7.93901 24.9679 8.59629 24.7176C9.25225 24.466 9.84476 23.9708 10.3738 23.2373C10.9028 22.5038 11.1672 21.6691 11.1672 20.7359C11.1672 19.3408 10.5734 18.3077 9.38584 17.6394V17.5902H12.7913L12.9367 16.7475H7.14158V16.7502Z" />
+        <path d="M24.1686 12.8831C24.2096 12.5715 24.3035 12.2787 24.4239 11.9991L15.091 10.9541C15.0342 11.235 14.9747 11.5146 14.939 11.8021C14.8927 12.1589 14.8702 12.5117 14.8583 12.8618L24.1911 13.9068C24.1435 13.578 24.1237 13.2412 24.1686 12.8831Z" />
+        <path d="M25.7041 10.3685C25.9699 10.1768 26.2556 10.029 26.5518 9.91189L20.8082 3.06274C20.5318 3.24379 20.2554 3.42349 19.983 3.6285C19.7092 3.83218 19.4593 4.04516 19.208 4.25816L24.9516 11.1087C25.1645 10.8438 25.4039 10.5908 25.7041 10.3685Z" />
+        <path d="M28.6863 9.6082C29.0196 9.64814 29.3317 9.73466 29.6293 9.84781L30.7481 1.05106C30.3738 0.980509 29.9956 0.916625 29.6068 0.875357C29.3079 0.842076 29.013 0.831427 28.7181 0.818115L27.5979 9.63217C27.9457 9.58691 28.3054 9.5656 28.6863 9.6082Z" />
+        <path d="M31.3669 11.0484C31.5719 11.2974 31.7293 11.5676 31.8536 11.8445L39.2966 6.34785C39.0916 6.06963 38.8827 5.79408 38.6486 5.52384C38.4462 5.28555 38.232 5.06988 38.0164 4.85156L30.5774 10.3442C30.8617 10.5439 31.1302 10.7662 31.3669 11.0484Z" />
+      </svg>
+    </a>
+    <a href="https://www.goinvo.com/work/" class="header-nav__link">
+      Work
+    </a>
+    <a href="https://www.goinvo.com/services/" class="header-nav__link hidden--until-lg">
+      Services
+    </a>
+    <a href="https://www.goinvo.com/about/" class="header-nav__link hidden--until-lg">
+      About
+    </a>
+    <a href="https://www.goinvo.com/vision/" class="header-nav__link">
+      Vision
+    </a>
+    <button class="header-nav__hamburger button button--transparent hidden--lg" id="nav-hamburger">
+      <svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.977783" y="0.690918" width="23.4666" height="1.96364" />
+        <rect x="0.977783" y="10.9358" width="23.4666" height="1.96364" />
+        <rect x="0.977783" y="21.1812" width="23.4666" height="1.96363" />
+      </svg>
+    </button>
+    <a href="http://www.goinvo.com/contact/" class="header-nav__link hidden--until-lg">
+      <div class="button button--primary">Contact</div>
+    </a>
+    <div class="mobile-nav-overlay hidden--lg" id="nav-overlay"></div>
+    <div class="mobile-nav">
+      <div class="button button--transparent mobile-nav__close" id="nav-close">
+        <svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7072 14.1211L24 25.4141L25.4143 24L14.1213 12.707L25.4143 1.41406L24 0L12.7072 11.293L1.41431 0L0 1.41406L11.293 12.707L0 24L1.41431 25.4141L12.7072 14.1211Z" />
+        </svg>
+      </div>
+      <div class="mobile-nav__content">
+        <ul class="mobile-nav__list">
+          <li>
+            <a href="http://www.goinvo.com" class="mobile-nav__link">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="https://www.goinvo.com/work/" class="mobile-nav__link">
+              Work
+            </a>
+          </li>
+          <li>
+            <a href="https://www.goinvo.com/services/" class="mobile-nav__link">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="https://www.goinvo.com/about/" class="mobile-nav__link">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="https://www.goinvo.com/vision" class="mobile-nav__link">
+              Vision
+            </a>
+          </li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="mobile-nav__list">
+          <li>
+            <a href="http://www.goinvo.com/about/careers/" class="mobile-nav__link-secondary">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a href="http://www.goinvo.com/about/open-office-hours/" class="mobile-nav__link-secondary">
+              Open Office Hours
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='main-container' id='main-container'>
+<div class='container content'>
+<article id='feature-article'>
+<div class='overall-header'>
+<div class='title title1'>
+<a href='/features/careplans'>
+<p class='big-title'>
+CARE
+</p>
+<p class='big-title'>
+PLANS
+</p>
+</a>
+<p class='sub-title'>
+PART 1: Overview
+</p>
+</div>
+<div class='title title2'>
+<p class='sub-title'>“Self-care in health is the new black.</p>
+<p>We’re digitally DIY’ing life, scheduling our own travel and booking restaurant tables, curating our photographs and trading stocks. People are morphing into health consumers, and that requires health engagement which means getting smart about our bodies, our selves, our numbers, and our treatment options. CarePlans is an on-ramp to shared and sound decision-making for self-health.”</p>
+<p class='text-right'>- Jane Sarasohn-Kahn, MA (Econ.), MHSA</p>
+<p class='text-right'>Health Economist, Advisor, Trend Weaver</p>
+<p class='text-right'>THINK-Health, Health Populi blog, Huffington Post</p>
+<p class='text-right'>Healthy Living</p>
+</div>
+<a class='background-copyright' href='https://www.flickr.com/photos/com_salud/13866052723' target='_blank'>Photo by COM SALUD</a>
+<div class='bg-cover'></div>
+</div>
+<header class='nav-wrapper stuck'>
+<nav class='main-nav'>
+<a class='one' href='javascript:void(0)'>Care Plans</a>
+<a class='two' href='javascript:void(0)'>Content</a>
+<a class='three' href='javascript:void(0)'>Application</a>
+<a class='four' href='javascript:void(0)'>History</a>
+</nav>
+</header>
+<header class='nav-wrapper scroll-nav'>
+<nav class='main-nav'>
+<a class='one' href='javascript:void(0)'>Care Plans</a>
+<a class='two' href='javascript:void(0)'>Content</a>
+<a class='three' href='javascript:void(0)'>Application</a>
+<a class='four' href='javascript:void(0)'>History</a>
+</nav>
+</header>
+<div class='part one'>
+<p>
+A <strong>care plan</strong> is a
+<strong>synthesis</strong>
+of all plans of care produced by you and your providers to manage your health
+<strong>day to day</strong>. It serves as a continuous, conceptual
+<strong>framework</strong>
+shared by all of your care team members to
+<strong>guide</strong>
+your care.<span class="superscript">1,2,3</span>
+</p>
+</div>
+<div class='part two'>
+<div class='component-chart'>
+<h1>What's in a Care Plan</h1>
+<p>Care plans usually consist of these universal components<span class="superscript">1,2</span>:</p>
+<div class='container-fluid' id='components'>
+<div class='row' id='summary'>
+<div class='col-md-3'>
+<h6>Patient Summary</h6>
+</div>
+<div class='col-md-9'>
+<p>Summarized history includes basic information such as demographics (name, age, contact info, ethnic or religious beliefs), health metrics (weight, blood pressure, etc), allergies, or medications and therapies. It can also contain past health history such as past hospitalizations.<span class="superscript">1</span></p>
+</div>
+</div>
+<div class='row middle'>
+<div class='col-md-2 col'>
+<h6>Health Concerns</h6>
+<p>These can include a variety of issues such as medical, surgical, behavioral, cognition, mood, environmental factors, financial, and more.<span class="superscript">2,4</span></p>
+</div>
+<div class='col-md-3 col'>
+<h6>Goals</h6>
+<p>Goals are used to measure progress. They give a care plan direction and  are the first indicator of what path a patient is taking to manage their health concerns. Care plans are typically made up of a few high level goals that consist of many smaller short-term goals.<span class="superscript">1,2</span></p>
+</div>
+<div class='col-md-5 col'>
+<h6>Instructions & Interventions</h6>
+<p>Information or directions given to you and your other providers make up the instructions of your care plan. This can include how to care for a condition, what to do at home, when to call for help, or changes to the medication. Interventions are actions taken, most often by you, to work toward achieving care plan goals. This can include symptom and medication management, community/social services, and removal of barriers to success.<span class="superscript">1,2,5</span></p>
+</div>
+<div class='col-md-2 col'>
+<h6>Review</h6>
+<p>You and your provider evaluate the effectiveness of the care plan, and make adjustments where appropriate.<span class="superscript">1</span></p>
+</div>
+</div>
+<div class='row' id='care-team'>
+<div class='col-md-3'>
+<h6>Care Team</h6>
+</div>
+<div class='col-md-9'>
+<p>Your care team is everyone who manages or provides care, including yourself. Medical practitioners, nurses, social workers, and caregivers are just a few examples.<span class="superscript">2,7</span></p>
+</div>
+</div>
+</div>
+<p id='bottom'>While a general consensus is being reached on the universal components of a care plan, the actual content that these components address is still largely unstandardized. In the future, there will be always-evolving care plan templates with evidence-based content for the full spectrum of human conditions. For now, we can categorize the areas of concern into commonly used categories.</p>
+</div>
+<div class='content-carousel'>
+<div class='care-cards carousel slide desktop' data-interval='false'>
+<ol class='card-carousel-indicators'>
+<li class='active' data-slide-to='0' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/nutrition.svg'>
+</li>
+<li data-slide-to='1' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/activity.svg'>
+</li>
+<li data-slide-to='2' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/sleep.svg'>
+</li>
+<li data-slide-to='3' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/mental.svg'>
+</li>
+<li data-slide-to='4' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/medication.svg'>
+</li>
+<li data-slide-to='5' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/sex.svg'>
+</li>
+<li data-slide-to='6' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/habits.svg'>
+</li>
+<li data-slide-to='7' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/vitals.svg'>
+</li>
+<li data-slide-to='8' data-target='.carousel.slide.desktop'>
+<img class='svg' src='/old/images/features/careplans/icons/adls.svg'>
+</li>
+</ol>
+<div class='carousel-inner' role='listbox'>
+<div class='item active clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/2_EatFood.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Nutrition</h6>
+<p>A nutrition plan must recognize the current problems in eating habits and consider chronic conditions/symptoms, food preparation capabilities, and dietary restrictions of the individual. The outer aisles of the supermarket are where the healthiest foods are: greens, fruits, poultry, nuts, grains, and dairy. Fill up the cart.<br>Meals at home and a brownbag lunch at work are more nutritious than eating out. Families who eat the evening meal together eat healthier.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/4_ExerciseIsMedicine.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Physical Activity</h6>
+<p>Regular physical activity is especially important for those with conditions like diabetes, high blood pressure, or high cholesterol. The goal is to get active and STAY doing enjoyable and, therefore, sustainable activities. Exercising regularly can lower your blood glucose, blood pressure, and cholesterol levels, and even reduce stress. An increase in light activity increases fitness, so fidget and putter and do housework. Make walking a daily habit — for your commute, errands, stairs, and fitness — and get that step count going up.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/5_GetMoreSleep.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Sleep</h6>
+<p>The amount of sleep a patient gets is a significant factor on their overall wellbeing. Healthy adults need 7-8 hours of sleep a day for optimal performance, and children and teens need more. Prolonged inadequate sleep can cause high blood pressure, heart attack, obesity, stroke, depression, mental impairment, and generally poor quality of life. Maintaining a consistent sleep schedule helps keep your cycles regular and promotes better quality sleep. Create a relaxing bedtime ritual and keep laptops out of the bedroom. Beds are for sex and rest. Recognizing problems with sleep behaviors and outlining the steps to improvement are an important part of the care plan.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/24_TellSomeone.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Mental Resilience</h6>
+<p>Management of stress and any mental, cognitive, or mood symptoms is another, very complex part of the care plan. Prolonged exposure to stress can be unhealthy, and cause or make it difficult to manage conditions like diabetes, high blood pressure, high cholesterol, and psychiatric illnesses. Chronic stress can negatively impact on your immune, digestive, renal (kidneys), and reproductive systems. It is essential to take the proper steps eliminate or cope with stressors in an effective way, as well as manage any symptoms of mental illness.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/11_TakeYourMedsOnTime.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Medication Management</h6>
+<p>Recognizing a need for change in the medication regimen allows for the creation of a treatment plan. A vital part of incorporating this into the care plan is ensuring the adherence to the prescribed medication. Patients who stick to their medications have better outcomes. Quitting early means health suffers.<span class='superscript'>9</span><br>It is important to ask and understand why a medication is necessary, how to properly take it, what side effects are causes for alarm, and who to talk to if issues arise.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/13_WrapItBeforeYouTapIt.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Prioritize Sexual Health</h6>
+<p>Good health bolsters your sex life; your sex life bolsters your health. Regular sex — once a week or more — is associated with greater immunity, less stress, fewer heart attacks, longer life, and unleashes mood-boosting endorphins. If worries or physical challenges are hindering your enjoyment of sex, talk to your partner and possibly a doctor for reassurance and advice. To avoid HIV infection and sexually transmitted diseases (STDs), a condom is the first line of defense. It forms a barrier between the penis and anus, vagina, or mouth. Bodily fluids cannot get past it. For safer oral sex, there are dental dams.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/10_Quit-Smoking.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Kick Bad Habits</h6>
+<p>It’s important to identify and recognize the impact of bad habits such as smoking, alcohol over consumption, substance use, and even consumption of harmful foods. Care plans can outline the steps to stop these behaviors that can lead to a variety of poor health conditions.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/19_KnowYourNumbers.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Know Your Numbers</h6>
+<p>A few minutes of daily head-to-toe visual checks helps you notice changes, like a new freckle or unusual hair growth or loss. Monthly checks of skin and your male or female parts give you information to share with your doctor. Especially relevant to patients managing chronic conditions, monitoring of relevant vitals (such as weight, blood pressure, daily steps, blood sugar, etc.) is an essential part of a care plan and self care.<span class='superscript'>9</span></p>
+</div>
+</div>
+<div class='item clearfix'>
+<div class='image'>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/7_Don&#39;tRushTheBrush.jpg'>
+<p>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='instruction'>
+<h6>Manage Your Daily Activities</h6>
+<p>Any other problems that affect the patient’s general wellbeing can be relevant to the care plan. These can be things such as personal hygiene, functioning around the house, management of finances, transportation, safety behaviors, etc.<span class='superscript'>9</span></p>
+</div>
+</div>
+<a class='left control' data-slide='prev' href='.carousel.slide.desktop' role='button'>
+<img class='svg' src='/old/images/features/careplans/icons/arrow.svg'>
+</a>
+<a class='right control' data-slide='next' href='.carousel.slide.desktop' role='button'>
+<img class='svg' src='/old/images/features/careplans/icons/arrow.svg'>
+</a>
+</div>
+</div>
+<div class='care-cards carousel slide mobile' data-interval='false' id='carousel-mobile'>
+<ol class='carousel-indicators card-carousel-indicators'>
+<li class='active' data-slide-to='0' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/nutrition.svg'>
+</li>
+<li data-slide-to='1' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/activity.svg'>
+</li>
+<li data-slide-to='2' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/sleep.svg'>
+</li>
+<li data-slide-to='3' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/mental.svg'>
+</li>
+<li data-slide-to='4' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/medication.svg'>
+</li>
+<li data-slide-to='5' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/sex.svg'>
+</li>
+<li data-slide-to='6' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/habits.svg'>
+</li>
+<li data-slide-to='7' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/vitals.svg'>
+</li>
+<li data-slide-to='8' data-target='#carousel-mobile'>
+<img class='svg' src='/old/images/features/careplans/icons/adls.svg'>
+</li>
+</ol>
+<div class='carousel-inner' role='listbox'>
+<div class='item active clearfix'>
+<h6>Nutrition</h6>
+<p>A nutrition plan must recognize the current problems in eating habits and consider chronic conditions/symptoms, food preparation capabilities, and dietary restrictions of the individual. The outer aisles of the supermarket are where the healthiest foods are: greens, fruits, poultry, nuts, grains, and dairy. Fill up the cart.<br>Meals at home and a brownbag lunch at work are more nutritious than eating out. Families who eat the evening meal together eat healthier.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/2_EatFood.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Physical Activity</h6>
+<p>Regular physical activity is especially important for those with conditions like diabetes, high blood pressure, or high cholesterol. The goal is to get active and STAY doing enjoyable and, therefore, sustainable activities. Exercising regularly can lower your blood glucose, blood pressure, and cholesterol levels, and even reduce stress. An increase in light activity increases fitness, so fidget and putter and do housework. Make walking a daily habit — for your commute, errands, stairs, and fitness — and get that step count going up.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/4_ExerciseIsMedicine.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Sleep</h6>
+<p>The amount of sleep a patient gets is a significant factor on their overall wellbeing. Healthy adults need 7-8 hours of sleep a day for optimal performance, and children and teens need more. Prolonged inadequate sleep can cause high blood pressure, heart attack, obesity, stroke, depression, mental impairment, and generally poor quality of life. Maintaining a consistent sleep schedule helps keep your cycles regular and promotes better quality sleep. Create a relaxing bedtime ritual and keep laptops out of the bedroom. Beds are for sex and rest. Recognizing problems with sleep behaviors and outlining the steps to improvement are an important part of the care plan.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/5_GetMoreSleep.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Mental Resilience</h6>
+<p>Management of stress and any mental, cognitive, or mood symptoms is another, very complex part of the care plan. Prolonged exposure to stress can be unhealthy, and cause or make it difficult to manage conditions like diabetes, high blood pressure, high cholesterol, and psychiatric illnesses. Chronic stress can negatively impact on your immune, digestive, renal (kidneys), and reproductive systems. It is essential to take the proper steps eliminate or cope with stressors in an effective way, as well as manage any symptoms of mental illness.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/24_TellSomeone.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Medication Management</h6>
+<p>Recognizing a need for change in the medication regimen allows for the creation of a treatment plan. A vital part of incorporating this into the care plan is ensuring the adherence to the prescribed medication. Patients who stick to their medications have better outcomes. Quitting early means health suffers.<span class='superscript'>9</span><br>It is important to ask and understand why a medication is necessary, how to properly take it, what side effects are causes for alarm, and who to talk to if issues arise.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/11_TakeYourMedsOnTime.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Prioritize Sexual Health</h6>
+<p>Good health bolsters your sex life; your sex life bolsters your health. Regular sex — once a week or more — is associated with greater immunity, less stress, fewer heart attacks, longer life, and unleashes mood-boosting endorphins. If worries or physical challenges are hindering your enjoyment of sex, talk to your partner and possibly a doctor for reassurance and advice. To avoid HIV infection and sexually transmitted diseases (STDs), a condom is the first line of defense. It forms a barrier between the penis and anus, vagina, or mouth. Bodily fluids cannot get past it. For safer oral sex, there are dental dams.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/13_WrapItBeforeYouTapIt.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Kick Bad Habits</h6>
+<p>It’s important to identify and recognize the impact of bad habits such as smoking, alcohol over consumption, substance use, and even consumption of harmful foods. Care plans can outline the steps to stop these behaviors that can lead to a variety of poor health conditions.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/10_Quit-Smoking.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Know Your Numbers</h6>
+<p>A few minutes of daily head-to-toe visual checks helps you notice changes, like a new freckle or unusual hair growth or loss. Monthly checks of skin and your male or female parts give you information to share with your doctor. Especially relevant to patients managing chronic conditions, monitoring of relevant vitals (such as weight, blood pressure, daily steps, blood sugar, etc.) is an essential part of a care plan and self care.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/19_KnowYourNumbers.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<div class='item clearfix'>
+<h6>Manage Your Daily Activities</h6>
+<p>Any other problems that affect the patient’s general wellbeing can be relevant to the care plan. These can be things such as personal hygiene, functioning around the house, management of finances, transportation, safety behaviors, etc.<span class='superscript'>9</span></p>
+<img class='care-card-img' src='/old/images/features/careplans/care_cards/7_Don&#39;tRushTheBrush.jpg'>
+<p class='carecards-link'>View more at <a href="http://carecards.me">carecards.me</a></p>
+</div>
+<a class='left control' data-slide='prev' href='#carousel-mobile' role='button'>
+<img class='svg' src='/old/images/features/careplans/icons/arrow.svg'>
+</a>
+<a class='right control' data-slide='next' href='#carousel-mobile' role='button'>
+<img class='svg' src='/old/images/features/careplans/icons/arrow.svg'>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class='part three'>
+<h1>How Care Plans Work</h1>
+<p>A care plan applies the different areas of concern (i.e. physical activity, nutrition, etc.) across the universal components (i.e. goals, instructions, etc.). There is a baseline care plan that exists for general healthy living, and this baseline becomes more customized to a person as more information is collected. Factors such as sex, age, ethnicity, activities, conditions, etc. influence what content goes in a care plan, and how important those areas are to the person.</p>
+<p>Explore how the care plan changes these factors across the three individuals below.</p>
+<div class='careplan-diagram desktop'>
+<ul class='nav nav-tabs' id='tabs'>
+<li class='active' role='presentation'>
+<a class='tab' data-toggle='tab' href='#1'>
+<img src='/old/images/features/careplans/isabella_norm.png'>
+<h6>Isabella<span class="superscript">43-50</span></h6>
+</a>
+</li>
+<li role='presentation'>
+<a class='tab' data-toggle='tab' href='#2'>
+<img src='/old/images/features/careplans/reggie_norm.png'>
+<h6>Reggie<span class="superscript">40-42</span></h6>
+</a>
+</li>
+<li role='presentation'>
+<a class='tab' data-toggle='tab' href='#3'>
+<img src='/old/images/features/careplans/donna_norm.png'>
+<h6>Donna<span class="superscript">51-53</span></h6>
+</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active' id='1'>
+<script src="../../old/javascripts/features/careplans/checkboxes.js?1655406650" type="text/javascript"></script>
+<div class='container-fluid profile desktop' data-index='0' data-patient='Isabella'>
+<div class='row'>
+<div class='col-md-3'>
+<img src='/old/images/features/careplans/isabella_norm.png'>
+</div>
+<div class='col-md-9'>
+<h6 class='blue'>Patient Summary</h6>
+<span class='summary'>Isabella is a 13 year old, active 7th grader who plays the flute and is a defender on the girls soccer team. Isabella snacks throughout the day and she does not like meat very much.</span>
+</div>
+</div>
+<div class='row'>
+<div class='left col-md-6' id='col'>
+<h6 class='blue'>Health Concerns (Choose 2)</h6>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='depression'>
+<input id='depression' type='checkbox'>Depression<span class="superscript">10-14</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='smoking'>
+<input id='smoking' type='checkbox'>Smoking</input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option0'>
+<input id='option0' type='checkbox'>ACL Tear<span class='superscript'>15-17</span></input>
+</label>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='obesity'>
+<input id='obesity' type='checkbox'>Obesity<span class="superscript">22-24</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='diabetes'>
+<input id='diabetes' type='checkbox'>Type II Diabetes<span class="superscript">18-21</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option1'>
+<input id='option1' type='checkbox'>Puberty<span class='superscript'>40-42</span></input>
+</label>
+</div>
+</div>
+</div>
+<div class='right col-md-6' id='col'>
+<h6 class='blue'>Care Team</h6>
+<p class='care-team'>Mom, Dad, Pediatrician, Coach</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 care-plan' id='col'>
+<table class='table table-bordered'>
+<tr class='headers'>
+<td class='header blank'></td>
+<td class='header blue'>Goals</td>
+<td class='header blue'>Instructions & Interventions</td>
+<td class='header blue'>Review</td>
+</tr>
+<tr id='Nutrition'>
+<td class='header blue'>Nutrition</td>
+<td class='content' id='goals'>
+<p>Develop and maintain healthy eating habits and routines. <br>Promote bone strength and growth.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Eat breakfast every day to boosts the body's metabolism, improve energy and alertness, and reduce risk of obesity. <br>Avoid junk and processed foods.<br>Get 4 servings of calcium every day for bone growth and strength.<br>Consume vitamin D enriched milk, eggs, and fatty fish like salmon to improve absorption of calcium.</p>
+</td>
+<td class='content' id='review'>
+<p>Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. </p>
+</td>
+</tr>
+<tr id='PhysicalActivity'>
+<td class='header blue'>Physical Activity</td>
+<td class='content' id='goals'>
+<p>Maintain regular physical activity.<br>Strengthen bones and muscles.<br>Ensure adequate time for rest and relaxation.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Get at least 60 minutes of mostly aerobic exercise.<br>Get muscle and bone strengthening exercise 3 days a week.</p>
+</td>
+<td class='content' id='review'>
+<p>Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.</p>
+</td>
+</tr>
+<tr id='Sleep'>
+<td class='header blue'>Sleep</td>
+<td class='content' id='goals'>
+<p>Get enough sleep.<br>Get on a regular sleep schedule.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Prioritize 8-10 hours of sleep for active, growing bodies.<br>Avoid sleeping in weekend to maintain a consistent routine.<br>Stop using computer, phone, and TV 1 hour before bed for a better quality sleep. </p>
+</td>
+<td class='content' id='review'>
+<p>Assess general morning energy levels at next check-up.</p>
+</td>
+</tr>
+<tr id='MentalResilience'>
+<td class='header blue'>Mental Resilience</td>
+<td class='content' id='goals'>
+<p></p>
+</td>
+<td class='content' id='instruction'>
+<p></p>
+</td>
+<td class='content' id='review'>
+<p></p>
+</td>
+</tr>
+<tr id='ManagingMedication'>
+<td class='header blue'>Managing Medication</td>
+<td class='content' id='goals'>
+<p>Ensure vaccinations are received.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Schedule next HPV vaccination in 3 months.<br>Get influenza vaccine in the fall.</p>
+</td>
+<td class='content' id='review'>
+<p>Assess upcoming vaccinations.</p>
+</td>
+</tr>
+<tr id='SexualHealth'>
+<td class='header blue'>Sexual Health</td>
+<td class='content' id='goals'>
+<p></p>
+</td>
+<td class='content' id='instruction'>
+<p></p>
+</td>
+<td class='content' id='review'>
+<p></p>
+</td>
+</tr>
+<tr id='CessationofBadHabits'>
+<td class='header blue'>Cessation of Bad Habits</td>
+<td class='content' id='goals'>
+<p>Get less screen time.<br>Reduce bad snacking behaviors.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Spend less than 2 hours of continuous time on screens - try timers, parental controls.<br>Keep only healthy snacks (fruits, vegetables, nuts, whole grains) in the house.</p>
+</td>
+<td class='content' id='review'>
+<p>Assess for barriers to achieving goal screen time.<br>Review satisfaction/adherence to snacking goals.</p>
+</td>
+</tr>
+<tr id='TrackingVitals'>
+<td class='header blue'>Tracking Vitals</td>
+<td class='content' id='goals'>
+<p>Track height and weight.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Track height and weight once a month with phone application or pencil and paper.</p>
+</td>
+<td class='content' id='review'>
+<p>Schedule yearly physical exams with pediatrician.<br>Test regularly for anemia.</p>
+</td>
+</tr>
+<tr id='ManagingADLs'>
+<td class='header blue'>Managing ADLs</td>
+<td class='content' id='goals'>
+<p>Remembering to brush teeth daily. </p>
+</td>
+<td class='content' id='instruction'>
+<p>Leave a reminder on the bathroom sink, or set an alarm.</p>
+</td>
+<td class='content' id='review'>
+<p></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='profile mobile' data-index='0' data-patient='Isabella'>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="name">Isabella</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuName"><li data-id="1"><a href="javascript:void(0)">Isabella</a></li><li data-id="2"><a href="javascript:void(0)">Reggie</a></li><li data-id="3"><a href="javascript:void(0)">Donna</a></li></ul></div>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="selection">Health Concern</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuSelection"><li><a href="javascript:void(0)" class="depression"><input type="checkbox" id="depression">&nbsp;<span>Depression</span></a></li><li><a href="javascript:void(0)" class="smoking"><input type="checkbox" id="smoking">&nbsp;<span>Smoking</span></a></li><li><a href="javascript:void(0)" class="option0"><input type="checkbox" id="option01">&nbsp;<span>ACL Tear</span></a></li><li><a href="javascript:void(0)" class="obesity"><input type="checkbox" id="obesity">&nbsp;<span>Obesity</span></a></li><li><a href="javascript:void(0)" class="diabetes"><input type="checkbox" id="diabetes">&nbsp;<span>Type II Diabetes</span></a></li><li><a href="javascript:void(0)" class="option1"><input type="checkbox" id="option11">&nbsp;<span>Puberty</span></a></li></ul></div>
+<div class='content-table' id='Nutrition'>
+<p class='header'>Nutrition</p>
+<p class='content' id='goals'>
+Develop and maintain healthy eating habits and routines. <br>Promote bone strength and growth.
+</p>
+<p class='content' id='instruction'>
+Eat breakfast every day to boosts the body's metabolism, improve energy and alertness, and reduce risk of obesity. <br>Avoid junk and processed foods.<br>Get 4 servings of calcium every day for bone growth and strength.<br>Consume vitamin D enriched milk, eggs, and fatty fish like salmon to improve absorption of calcium.
+</p>
+<p class='content' id='review'>
+Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. 
+</p>
+</div>
+<div class='content-table' id='PhysicalActivity'>
+<p class='header'>Physical Activity</p>
+<p class='content' id='goals'>
+Maintain regular physical activity.<br>Strengthen bones and muscles.<br>Ensure adequate time for rest and relaxation.
+</p>
+<p class='content' id='instruction'>
+Get at least 60 minutes of mostly aerobic exercise.<br>Get muscle and bone strengthening exercise 3 days a week.
+</p>
+<p class='content' id='review'>
+Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.
+</p>
+</div>
+<div class='content-table' id='Sleep'>
+<p class='header'>Sleep</p>
+<p class='content' id='goals'>
+Get enough sleep.<br>Get on a regular sleep schedule.
+</p>
+<p class='content' id='instruction'>
+Prioritize 8-10 hours of sleep for active, growing bodies.<br>Avoid sleeping in weekend to maintain a consistent routine.<br>Stop using computer, phone, and TV 1 hour before bed for a better quality sleep. 
+</p>
+<p class='content' id='review'>
+Assess general morning energy levels at next check-up.
+</p>
+</div>
+<div class='content-table' id='MentalResilience'>
+<p class='header'>Mental Resilience</p>
+<p class='content' id='goals'>
+
+</p>
+<p class='content' id='instruction'>
+
+</p>
+<p class='content' id='review'>
+
+</p>
+</div>
+<div class='content-table' id='ManagingMedication'>
+<p class='header'>Managing Medication</p>
+<p class='content' id='goals'>
+Ensure vaccinations are received.
+</p>
+<p class='content' id='instruction'>
+Schedule next HPV vaccination in 3 months.<br>Get influenza vaccine in the fall.
+</p>
+<p class='content' id='review'>
+Assess upcoming vaccinations.
+</p>
+</div>
+<div class='content-table' id='SexualHealth'>
+<p class='header'>Sexual Health</p>
+<p class='content' id='goals'>
+
+</p>
+<p class='content' id='instruction'>
+
+</p>
+<p class='content' id='review'>
+
+</p>
+</div>
+<div class='content-table' id='CessationofBadHabits'>
+<p class='header'>Cessation of Bad Habits</p>
+<p class='content' id='goals'>
+Get less screen time.<br>Reduce bad snacking behaviors.
+</p>
+<p class='content' id='instruction'>
+Spend less than 2 hours of continuous time on screens - try timers, parental controls.<br>Keep only healthy snacks (fruits, vegetables, nuts, whole grains) in the house.
+</p>
+<p class='content' id='review'>
+Assess for barriers to achieving goal screen time.<br>Review satisfaction/adherence to snacking goals.
+</p>
+</div>
+<div class='content-table' id='TrackingVitals'>
+<p class='header'>Tracking Vitals</p>
+<p class='content' id='goals'>
+Track height and weight.
+</p>
+<p class='content' id='instruction'>
+Track height and weight once a month with phone application or pencil and paper.
+</p>
+<p class='content' id='review'>
+Schedule yearly physical exams with pediatrician.<br>Test regularly for anemia.
+</p>
+</div>
+<div class='content-table' id='ManagingADLs'>
+<p class='header'>Managing ADLs</p>
+<p class='content' id='goals'>
+Remembering to brush teeth daily. 
+</p>
+<p class='content' id='instruction'>
+Leave a reminder on the bathroom sink, or set an alarm.
+</p>
+<p class='content' id='review'>
+
+</p>
+</div>
+</div>
+
+</div>
+<div class='tab-pane' id='2'>
+<script src="../../old/javascripts/features/careplans/checkboxes.js?1655406650" type="text/javascript"></script>
+<div class='container-fluid profile desktop' data-index='1' data-patient='Reggie'>
+<div class='row'>
+<div class='col-md-3'>
+<img src='/old/images/features/careplans/reggie_norm.png'>
+</div>
+<div class='col-md-9'>
+<h6 class='blue'>Patient Summary</h6>
+<span class='summary'>Reggie is a 35 year old, successful, driven accountant who works 8am-6pm in downtown Boston and commutes home to a nearby suburb. He enjoys gaming and occasionally going out to drink at bars or clubs with friends during the week. On the weekends, Reggie likes to swim at the local fitness center or go on walks with his labradoodle. Reggie is in long distance relationship, and sees his boyfriend about once every 2 weeks.</span>
+</div>
+</div>
+<div class='row'>
+<div class='left col-md-6' id='col'>
+<h6 class='blue'>Health Concerns (Choose 2)</h6>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='depression'>
+<input id='depression' type='checkbox'>Depression<span class="superscript">10-14</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='smoking'>
+<input id='smoking' type='checkbox'>Smoking</input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option0'>
+<input id='option0' type='checkbox'>Caregiver<span class='superscript'>31-32</span></input>
+</label>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='obesity'>
+<input id='obesity' type='checkbox'>Obesity<span class="superscript">22-24</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='diabetes'>
+<input id='diabetes' type='checkbox'>Type II Diabetes<span class="superscript">18-21</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option1'>
+<input id='option1' type='checkbox'>Chlamydia<span class='superscript'>30</span></input>
+</label>
+</div>
+</div>
+</div>
+<div class='right col-md-6' id='col'>
+<h6 class='blue'>Care Team</h6>
+<p class='care-team'>Primary Care Physician, Boyfriend, Mother, Friends</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 care-plan' id='col'>
+<table class='table table-bordered'>
+<tr class='headers'>
+<td class='header blank'></td>
+<td class='header blue'>Goals</td>
+<td class='header blue'>Instructions & Interventions</td>
+<td class='header blue'>Review</td>
+</tr>
+<tr id='Nutrition'>
+<td class='header blue'>Nutrition</td>
+<td class='content' id='goals'>
+<p>Eat a healthier, plant-based diet.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Eat 2-3 servings to fish a week (for the fish oils).<br>Replace the fatty snacks consumed when gaming, with a fresh fruit.<br>Avoid the free high-fat snack foods at the accounting firm.<br>Meatless Mondays.</p>
+</td>
+<td class='content' id='review'>
+<p>Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. </p>
+</td>
+</tr>
+<tr id='PhysicalActivity'>
+<td class='header blue'>Physical Activity</td>
+<td class='content' id='goals'>
+<p>Sit less and maintain current body weight by staying active.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Get 30 minutes of physical activity a day.<br>Join a local swim team that meets twice a week.<br>Use a bike for the 30 minute work commute.<br>Find alternate bike paths to stay motivated and interested in the exercise.</p>
+</td>
+<td class='content' id='review'>
+<p>Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.</p>
+</td>
+</tr>
+<tr id='Sleep'>
+<td class='header blue'>Sleep</td>
+<td class='content' id='goals'>
+<p>Feel more awake in the mornings for work. </p>
+</td>
+<td class='content' id='instruction'>
+<p>Turn the games/computer off at least an hour before bed.<br>Go to bed by midnight to sleep at least 8 hours for the 8am job.</p>
+</td>
+<td class='content' id='review'>
+<p>Review general morning energy levels a month from now.</p>
+</td>
+</tr>
+<tr id='MentalResilience'>
+<td class='header blue'>Mental Resilience</td>
+<td class='content' id='goals'>
+<p>Reduce the stress from partner often being absent.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Call partner by next month, and communicate the reason for the stress.<br>If interest in hobbies are still lacking two weeks from now, seek appointment with specialized mental health professional.<br>Focus on meeting with friends more often. </p>
+</td>
+<td class='content' id='review'>
+<p>Review mental stress condition with a care provider.</p>
+</td>
+</tr>
+<tr id='ManagingMedication'>
+<td class='header blue'>Managing Medication</td>
+<td class='content' id='goals'>
+<p>Get vitamin D levels up to the normal range to lower the risk of depression.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Take 2000IUs of vitamin D3 every day.<br>Place daily vitamins by the coffee maker to incorporate them into daily routine.</p>
+</td>
+<td class='content' id='review'>
+<p>Review vitamin D levels every 3 months. </p>
+</td>
+</tr>
+<tr id='SexualHealth'>
+<td class='header blue'>Sexual Health</td>
+<td class='content' id='goals'>
+<p>Have an understanding of personal sexual health status.<br>Understand how to avoid HIV infection and other sexually transmitted diseases (STDs).</p>
+</td>
+<td class='content' id='instruction'>
+<p>Conduct monthly self-exams for testicular cancer.<br>Make appointment this month with primary provider for HIV screening.<br>Use condoms to form a barrier between the penis and anus, or mouth.</p>
+</td>
+<td class='content' id='review'>
+<p>Review results from HIV screening.</p>
+</td>
+</tr>
+<tr id='CessationofBadHabits'>
+<td class='header blue'>Cessation of Bad Habits</td>
+<td class='content' id='goals'>
+<p>Reduce alcohol intake by half of current consumption.</p>
+</td>
+<td class='content' id='instruction'>
+<p>To limit alcohol consumption, drink water for every other friend meeting.</p>
+</td>
+<td class='content' id='review'>
+<p>Review general alcohol consumption levels.</p>
+</td>
+</tr>
+<tr id='TrackingVitals'>
+<td class='header blue'>Tracking Vitals</td>
+<td class='content' id='goals'>
+<p>Be able to consistently keep track of current body weight.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Place the bathroom scale in front of the counter as a daily reminder to check body weight.</p>
+</td>
+<td class='content' id='review'>
+<p>Review trends in body weight with a primary care provider.</p>
+</td>
+</tr>
+<tr id='ManagingADLs'>
+<td class='header blue'>Managing ADLs</td>
+<td class='content' id='goals'>
+<p>Manage time to bike to work in the mornings. </p>
+</td>
+<td class='content' id='instruction'>
+<p>Set an alarm to wake up half an hour earlier than usual.</p>
+</td>
+<td class='content' id='review'>
+<p>Review biking frequency in the commute.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='profile mobile' data-index='1' data-patient='Reggie'>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="name">Reggie</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuName"><li data-id="1"><a href="javascript:void(0)">Isabella</a></li><li data-id="2"><a href="javascript:void(0)">Reggie</a></li><li data-id="3"><a href="javascript:void(0)">Donna</a></li></ul></div>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="selection">Health Concern</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuSelection"><li><a href="javascript:void(0)" class="depression"><input type="checkbox" id="depression">&nbsp;<span>Depression</span></a></li><li><a href="javascript:void(0)" class="smoking"><input type="checkbox" id="smoking">&nbsp;<span>Smoking</span></a></li><li><a href="javascript:void(0)" class="option0"><input type="checkbox" id="option02">&nbsp;<span>Caregiver</span></a></li><li><a href="javascript:void(0)" class="obesity"><input type="checkbox" id="obesity">&nbsp;<span>Obesity</span></a></li><li><a href="javascript:void(0)" class="diabetes"><input type="checkbox" id="diabetes">&nbsp;<span>Type II Diabetes</span></a></li><li><a href="javascript:void(0)" class="option1"><input type="checkbox" id="option12">&nbsp;<span>Chlamydia</span></a></li></ul></div>
+<div class='content-table' id='Nutrition'>
+<p class='header'>Nutrition</p>
+<p class='content' id='goals'>
+Eat a healthier, plant-based diet.
+</p>
+<p class='content' id='instruction'>
+Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Eat 2-3 servings to fish a week (for the fish oils).<br>Replace the fatty snacks consumed when gaming, with a fresh fruit.<br>Avoid the free high-fat snack foods at the accounting firm.<br>Meatless Mondays.
+</p>
+<p class='content' id='review'>
+Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. 
+</p>
+</div>
+<div class='content-table' id='PhysicalActivity'>
+<p class='header'>Physical Activity</p>
+<p class='content' id='goals'>
+Sit less and maintain current body weight by staying active.
+</p>
+<p class='content' id='instruction'>
+Get 30 minutes of physical activity a day.<br>Join a local swim team that meets twice a week.<br>Use a bike for the 30 minute work commute.<br>Find alternate bike paths to stay motivated and interested in the exercise.
+</p>
+<p class='content' id='review'>
+Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.
+</p>
+</div>
+<div class='content-table' id='Sleep'>
+<p class='header'>Sleep</p>
+<p class='content' id='goals'>
+Feel more awake in the mornings for work. 
+</p>
+<p class='content' id='instruction'>
+Turn the games/computer off at least an hour before bed.<br>Go to bed by midnight to sleep at least 8 hours for the 8am job.
+</p>
+<p class='content' id='review'>
+Review general morning energy levels a month from now.
+</p>
+</div>
+<div class='content-table' id='MentalResilience'>
+<p class='header'>Mental Resilience</p>
+<p class='content' id='goals'>
+Reduce the stress from partner often being absent.
+</p>
+<p class='content' id='instruction'>
+Call partner by next month, and communicate the reason for the stress.<br>If interest in hobbies are still lacking two weeks from now, seek appointment with specialized mental health professional.<br>Focus on meeting with friends more often. 
+</p>
+<p class='content' id='review'>
+Review mental stress condition with a care provider.
+</p>
+</div>
+<div class='content-table' id='ManagingMedication'>
+<p class='header'>Managing Medication</p>
+<p class='content' id='goals'>
+Get vitamin D levels up to the normal range to lower the risk of depression.
+</p>
+<p class='content' id='instruction'>
+Take 2000IUs of vitamin D3 every day.<br>Place daily vitamins by the coffee maker to incorporate them into daily routine.
+</p>
+<p class='content' id='review'>
+Review vitamin D levels every 3 months. 
+</p>
+</div>
+<div class='content-table' id='SexualHealth'>
+<p class='header'>Sexual Health</p>
+<p class='content' id='goals'>
+Have an understanding of personal sexual health status.<br>Understand how to avoid HIV infection and other sexually transmitted diseases (STDs).
+</p>
+<p class='content' id='instruction'>
+Conduct monthly self-exams for testicular cancer.<br>Make appointment this month with primary provider for HIV screening.<br>Use condoms to form a barrier between the penis and anus, or mouth.
+</p>
+<p class='content' id='review'>
+Review results from HIV screening.
+</p>
+</div>
+<div class='content-table' id='CessationofBadHabits'>
+<p class='header'>Cessation of Bad Habits</p>
+<p class='content' id='goals'>
+Reduce alcohol intake by half of current consumption.
+</p>
+<p class='content' id='instruction'>
+To limit alcohol consumption, drink water for every other friend meeting.
+</p>
+<p class='content' id='review'>
+Review general alcohol consumption levels.
+</p>
+</div>
+<div class='content-table' id='TrackingVitals'>
+<p class='header'>Tracking Vitals</p>
+<p class='content' id='goals'>
+Be able to consistently keep track of current body weight.
+</p>
+<p class='content' id='instruction'>
+Place the bathroom scale in front of the counter as a daily reminder to check body weight.
+</p>
+<p class='content' id='review'>
+Review trends in body weight with a primary care provider.
+</p>
+</div>
+<div class='content-table' id='ManagingADLs'>
+<p class='header'>Managing ADLs</p>
+<p class='content' id='goals'>
+Manage time to bike to work in the mornings. 
+</p>
+<p class='content' id='instruction'>
+Set an alarm to wake up half an hour earlier than usual.
+</p>
+<p class='content' id='review'>
+Review biking frequency in the commute.
+</p>
+</div>
+</div>
+
+</div>
+<div class='tab-pane' id='3'>
+<script src="../../old/javascripts/features/careplans/checkboxes.js?1655406650" type="text/javascript"></script>
+<div class='container-fluid profile desktop' data-index='2' data-patient='Donna'>
+<div class='row'>
+<div class='col-md-3'>
+<img src='/old/images/features/careplans/donna_norm.png'>
+</div>
+<div class='col-md-9'>
+<h6 class='blue'>Patient Summary</h6>
+<span class='summary'>Donna is a 68 year old, retired bank clerk living in downtown Chicago with her husband. She enjoys doing crossword puzzles and watching TV at night, and therefore doesn't leave the apartment much. Donna often feels isolated and lonely, and suffers from chronic neck pain from sitting for long periods of time.</span>
+</div>
+</div>
+<div class='row'>
+<div class='left col-md-6' id='col'>
+<h6 class='blue'>Health Concerns (Choose 2)</h6>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='depression'>
+<input id='depression' type='checkbox'>Depression<span class="superscript">10-14</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='smoking'>
+<input id='smoking' type='checkbox'>Smoking</input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option0'>
+<input id='option0' type='checkbox'>Dementia<span class='superscript'>33-37</span></input>
+</label>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='obesity'>
+<input id='obesity' type='checkbox'>Obesity<span class="superscript">22-24</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='diabetes'>
+<input id='diabetes' type='checkbox'>Type II Diabetes<span class="superscript">18-21</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option1'>
+<input id='option1' type='checkbox'>Hypertension<span class='superscript'>25-29</span></input>
+</label>
+</div>
+</div>
+</div>
+<div class='right col-md-6' id='col'>
+<h6 class='blue'>Care Team</h6>
+<p class='care-team'>Primary Care Physician, Daughter, Husband, Neighbor</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 care-plan' id='col'>
+<table class='table table-bordered'>
+<tr class='headers'>
+<td class='header blank'></td>
+<td class='header blue'>Goals</td>
+<td class='header blue'>Instructions & Interventions</td>
+<td class='header blue'>Review</td>
+</tr>
+<tr id='Nutrition'>
+<td class='header blue'>Nutrition</td>
+<td class='content' id='goals'>
+<p>Eat a healthier, plant-based diet.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Avoid processed meals by signing up for Meals on Wheels delivery once a week to help deliver healthier groceries to cook with.</p>
+</td>
+<td class='content' id='review'>
+<p>Review eating habits next month.<br>Review any barriers to nutrition plan adherence. </p>
+</td>
+</tr>
+<tr id='PhysicalActivity'>
+<td class='header blue'>Physical Activity</td>
+<td class='content' id='goals'>
+<p>Get more active.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Begin with a local community center that offers exercise classes for seniors and has sessions at least 3 times a week.</p>
+</td>
+<td class='content' id='review'>
+<p>Review mobility and movement changes 4 months from now.</p>
+</td>
+</tr>
+<tr id='Sleep'>
+<td class='header blue'>Sleep</td>
+<td class='content' id='goals'>
+<p>Reduce the time it takes to get to sleep.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Buy soft earplugs for daily use to reduce noise coming from the windows.<br>Turn off all TV lighting at least an hour before sleeping.</p>
+</td>
+<td class='content' id='review'>
+<p>Review quality of sleep next month and consider a sleep aid.</p>
+</td>
+</tr>
+<tr id='MentalResilience'>
+<td class='header blue'>Mental Resilience</td>
+<td class='content' id='goals'>
+<p>Increase social interaction and community involvement.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Join a local community organization to social engage with people around a hobby.</p>
+</td>
+<td class='content' id='review'>
+<p>Review satisfaction with community involvement or barriers to social interaction.</p>
+</td>
+</tr>
+<tr id='ManagingMedication'>
+<td class='header blue'>Managing Medication</td>
+<td class='content' id='goals'>
+<p>Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.</p>
+</td>
+<td class='content' id='review'>
+<p>Test vitamin levels every 6 months and adjust dosage accordingly.</p>
+</td>
+</tr>
+<tr id='SexualHealth'>
+<td class='header blue'>Sexual Health</td>
+<td class='content' id='goals'>
+<p>Increase sexual activity with husband.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Consider having sex in the mornings, or at times of day when both parties are most rested.</p>
+</td>
+<td class='content' id='review'>
+<p>Review satisfaction with sexual activity or barriers to satisfaction.</p>
+</td>
+</tr>
+<tr id='CessationofBadHabits'>
+<td class='header blue'>Cessation of Bad Habits</td>
+<td class='content' id='goals'>
+<p>Reduce unhealthy snacking when bored.<br>Improve posture to reduce neck pain and stiffness.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Keep only health snacks (fruits, vegetables, nuts) in the house.<br>Find hobbies that occupy the hands to fill periods of boredom.<br>Purchase a chair with strong ergonomic back support to prevent hunching forward when watching TV at night.<br>Purchase neck support pillow for daily use when sleeping.</p>
+</td>
+<td class='content' id='review'>
+<p>Review quality of neck posture in 6 months, refer to Orthopedic if no improvement.</p>
+</td>
+</tr>
+<tr id='TrackingVitals'>
+<td class='header blue'>Tracking Vitals</td>
+<td class='content' id='goals'>
+<p>Track weight, blood pressure, cholesterol, and blood sugar levels to screen for common chronic conditions.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Schedule next annual check-up. </p>
+</td>
+<td class='content' id='review'>
+<p>Review results from check-up with a care provider to determine additional steps that may be needed.</p>
+</td>
+</tr>
+<tr id='ManagingADLs'>
+<td class='header blue'>Managing ADLs</td>
+<td class='content' id='goals'>
+<p>Prevent future dental problems by prioritizing regular dental hygiene.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Set a daily automatic alarm as a reminder to brush teeth. A digital device, a clock, or watch reminder may all be used.</p>
+</td>
+<td class='content' id='review'>
+<p>Review dental health in 6 months.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='profile mobile' data-index='2' data-patient='Donna'>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="name">Donna</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuName"><li data-id="1"><a href="javascript:void(0)">Isabella</a></li><li data-id="2"><a href="javascript:void(0)">Reggie</a></li><li data-id="3"><a href="javascript:void(0)">Donna</a></li></ul></div>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="selection">Health Concern</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuSelection"><li><a href="javascript:void(0)" class="depression"><input type="checkbox" id="depression">&nbsp;<span>Depression</span></a></li><li><a href="javascript:void(0)" class="smoking"><input type="checkbox" id="smoking">&nbsp;<span>Smoking</span></a></li><li><a href="javascript:void(0)" class="option0"><input type="checkbox" id="option03">&nbsp;<span>Dementia</span></a></li><li><a href="javascript:void(0)" class="obesity"><input type="checkbox" id="obesity">&nbsp;<span>Obesity</span></a></li><li><a href="javascript:void(0)" class="diabetes"><input type="checkbox" id="diabetes">&nbsp;<span>Type II Diabetes</span></a></li><li><a href="javascript:void(0)" class="option1"><input type="checkbox" id="option13">&nbsp;<span>Hypertension</span></a></li></ul></div>
+<div class='content-table' id='Nutrition'>
+<p class='header'>Nutrition</p>
+<p class='content' id='goals'>
+Eat a healthier, plant-based diet.
+</p>
+<p class='content' id='instruction'>
+Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Avoid processed meals by signing up for Meals on Wheels delivery once a week to help deliver healthier groceries to cook with.
+</p>
+<p class='content' id='review'>
+Review eating habits next month.<br>Review any barriers to nutrition plan adherence. 
+</p>
+</div>
+<div class='content-table' id='PhysicalActivity'>
+<p class='header'>Physical Activity</p>
+<p class='content' id='goals'>
+Get more active.
+</p>
+<p class='content' id='instruction'>
+Begin with a local community center that offers exercise classes for seniors and has sessions at least 3 times a week.
+</p>
+<p class='content' id='review'>
+Review mobility and movement changes 4 months from now.
+</p>
+</div>
+<div class='content-table' id='Sleep'>
+<p class='header'>Sleep</p>
+<p class='content' id='goals'>
+Reduce the time it takes to get to sleep.
+</p>
+<p class='content' id='instruction'>
+Buy soft earplugs for daily use to reduce noise coming from the windows.<br>Turn off all TV lighting at least an hour before sleeping.
+</p>
+<p class='content' id='review'>
+Review quality of sleep next month and consider a sleep aid.
+</p>
+</div>
+<div class='content-table' id='MentalResilience'>
+<p class='header'>Mental Resilience</p>
+<p class='content' id='goals'>
+Increase social interaction and community involvement.
+</p>
+<p class='content' id='instruction'>
+Join a local community organization to social engage with people around a hobby.
+</p>
+<p class='content' id='review'>
+Review satisfaction with community involvement or barriers to social interaction.
+</p>
+</div>
+<div class='content-table' id='ManagingMedication'>
+<p class='header'>Managing Medication</p>
+<p class='content' id='goals'>
+Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.
+</p>
+<p class='content' id='instruction'>
+Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.
+</p>
+<p class='content' id='review'>
+Test vitamin levels every 6 months and adjust dosage accordingly.
+</p>
+</div>
+<div class='content-table' id='SexualHealth'>
+<p class='header'>Sexual Health</p>
+<p class='content' id='goals'>
+Increase sexual activity with husband.
+</p>
+<p class='content' id='instruction'>
+Consider having sex in the mornings, or at times of day when both parties are most rested.
+</p>
+<p class='content' id='review'>
+Review satisfaction with sexual activity or barriers to satisfaction.
+</p>
+</div>
+<div class='content-table' id='CessationofBadHabits'>
+<p class='header'>Cessation of Bad Habits</p>
+<p class='content' id='goals'>
+Reduce unhealthy snacking when bored.<br>Improve posture to reduce neck pain and stiffness.
+</p>
+<p class='content' id='instruction'>
+Keep only health snacks (fruits, vegetables, nuts) in the house.<br>Find hobbies that occupy the hands to fill periods of boredom.<br>Purchase a chair with strong ergonomic back support to prevent hunching forward when watching TV at night.<br>Purchase neck support pillow for daily use when sleeping.
+</p>
+<p class='content' id='review'>
+Review quality of neck posture in 6 months, refer to Orthopedic if no improvement.
+</p>
+</div>
+<div class='content-table' id='TrackingVitals'>
+<p class='header'>Tracking Vitals</p>
+<p class='content' id='goals'>
+Track weight, blood pressure, cholesterol, and blood sugar levels to screen for common chronic conditions.
+</p>
+<p class='content' id='instruction'>
+Schedule next annual check-up. 
+</p>
+<p class='content' id='review'>
+Review results from check-up with a care provider to determine additional steps that may be needed.
+</p>
+</div>
+<div class='content-table' id='ManagingADLs'>
+<p class='header'>Managing ADLs</p>
+<p class='content' id='goals'>
+Prevent future dental problems by prioritizing regular dental hygiene.
+</p>
+<p class='content' id='instruction'>
+Set a daily automatic alarm as a reminder to brush teeth. A digital device, a clock, or watch reminder may all be used.
+</p>
+<p class='content' id='review'>
+Review dental health in 6 months.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='careplan-diagram mobile container-fluid'>
+<div class='profile-content'>
+<div class='profile-pane active'>
+<script src="../../old/javascripts/features/careplans/checkboxes.js?1655406650" type="text/javascript"></script>
+<div class='container-fluid profile desktop' data-index='0' data-patient='Isabella'>
+<div class='row'>
+<div class='col-md-3'>
+<img src='/old/images/features/careplans/isabella_norm.png'>
+</div>
+<div class='col-md-9'>
+<h6 class='blue'>Patient Summary</h6>
+<span class='summary'>Isabella is a 13 year old, active 7th grader who plays the flute and is a defender on the girls soccer team. Isabella snacks throughout the day and she does not like meat very much.</span>
+</div>
+</div>
+<div class='row'>
+<div class='left col-md-6' id='col'>
+<h6 class='blue'>Health Concerns (Choose 2)</h6>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='depression'>
+<input id='depression' type='checkbox'>Depression<span class="superscript">10-14</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='smoking'>
+<input id='smoking' type='checkbox'>Smoking</input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option0'>
+<input id='option0' type='checkbox'>ACL Tear<span class='superscript'>15-17</span></input>
+</label>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='obesity'>
+<input id='obesity' type='checkbox'>Obesity<span class="superscript">22-24</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='diabetes'>
+<input id='diabetes' type='checkbox'>Type II Diabetes<span class="superscript">18-21</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option1'>
+<input id='option1' type='checkbox'>Puberty<span class='superscript'>40-42</span></input>
+</label>
+</div>
+</div>
+</div>
+<div class='right col-md-6' id='col'>
+<h6 class='blue'>Care Team</h6>
+<p class='care-team'>Mom, Dad, Pediatrician, Coach</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 care-plan' id='col'>
+<table class='table table-bordered'>
+<tr class='headers'>
+<td class='header blank'></td>
+<td class='header blue'>Goals</td>
+<td class='header blue'>Instructions & Interventions</td>
+<td class='header blue'>Review</td>
+</tr>
+<tr id='Nutrition'>
+<td class='header blue'>Nutrition</td>
+<td class='content' id='goals'>
+<p>Develop and maintain healthy eating habits and routines. <br>Promote bone strength and growth.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Eat breakfast every day to boosts the body's metabolism, improve energy and alertness, and reduce risk of obesity. <br>Avoid junk and processed foods.<br>Get 4 servings of calcium every day for bone growth and strength.<br>Consume vitamin D enriched milk, eggs, and fatty fish like salmon to improve absorption of calcium.</p>
+</td>
+<td class='content' id='review'>
+<p>Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. </p>
+</td>
+</tr>
+<tr id='PhysicalActivity'>
+<td class='header blue'>Physical Activity</td>
+<td class='content' id='goals'>
+<p>Maintain regular physical activity.<br>Strengthen bones and muscles.<br>Ensure adequate time for rest and relaxation.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Get at least 60 minutes of mostly aerobic exercise.<br>Get muscle and bone strengthening exercise 3 days a week.</p>
+</td>
+<td class='content' id='review'>
+<p>Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.</p>
+</td>
+</tr>
+<tr id='Sleep'>
+<td class='header blue'>Sleep</td>
+<td class='content' id='goals'>
+<p>Get enough sleep.<br>Get on a regular sleep schedule.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Prioritize 8-10 hours of sleep for active, growing bodies.<br>Avoid sleeping in weekend to maintain a consistent routine.<br>Stop using computer, phone, and TV 1 hour before bed for a better quality sleep. </p>
+</td>
+<td class='content' id='review'>
+<p>Assess general morning energy levels at next check-up.</p>
+</td>
+</tr>
+<tr id='MentalResilience'>
+<td class='header blue'>Mental Resilience</td>
+<td class='content' id='goals'>
+<p></p>
+</td>
+<td class='content' id='instruction'>
+<p></p>
+</td>
+<td class='content' id='review'>
+<p></p>
+</td>
+</tr>
+<tr id='ManagingMedication'>
+<td class='header blue'>Managing Medication</td>
+<td class='content' id='goals'>
+<p>Ensure vaccinations are received.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Schedule next HPV vaccination in 3 months.<br>Get influenza vaccine in the fall.</p>
+</td>
+<td class='content' id='review'>
+<p>Assess upcoming vaccinations.</p>
+</td>
+</tr>
+<tr id='SexualHealth'>
+<td class='header blue'>Sexual Health</td>
+<td class='content' id='goals'>
+<p></p>
+</td>
+<td class='content' id='instruction'>
+<p></p>
+</td>
+<td class='content' id='review'>
+<p></p>
+</td>
+</tr>
+<tr id='CessationofBadHabits'>
+<td class='header blue'>Cessation of Bad Habits</td>
+<td class='content' id='goals'>
+<p>Get less screen time.<br>Reduce bad snacking behaviors.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Spend less than 2 hours of continuous time on screens - try timers, parental controls.<br>Keep only healthy snacks (fruits, vegetables, nuts, whole grains) in the house.</p>
+</td>
+<td class='content' id='review'>
+<p>Assess for barriers to achieving goal screen time.<br>Review satisfaction/adherence to snacking goals.</p>
+</td>
+</tr>
+<tr id='TrackingVitals'>
+<td class='header blue'>Tracking Vitals</td>
+<td class='content' id='goals'>
+<p>Track height and weight.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Track height and weight once a month with phone application or pencil and paper.</p>
+</td>
+<td class='content' id='review'>
+<p>Schedule yearly physical exams with pediatrician.<br>Test regularly for anemia.</p>
+</td>
+</tr>
+<tr id='ManagingADLs'>
+<td class='header blue'>Managing ADLs</td>
+<td class='content' id='goals'>
+<p>Remembering to brush teeth daily. </p>
+</td>
+<td class='content' id='instruction'>
+<p>Leave a reminder on the bathroom sink, or set an alarm.</p>
+</td>
+<td class='content' id='review'>
+<p></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='profile mobile' data-index='0' data-patient='Isabella'>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="name">Isabella</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuName"><li data-id="1"><a href="javascript:void(0)">Isabella</a></li><li data-id="2"><a href="javascript:void(0)">Reggie</a></li><li data-id="3"><a href="javascript:void(0)">Donna</a></li></ul></div>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="selection">Health Concern</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuSelection"><li><a href="javascript:void(0)" class="depression"><input type="checkbox" id="depression">&nbsp;<span>Depression</span></a></li><li><a href="javascript:void(0)" class="smoking"><input type="checkbox" id="smoking">&nbsp;<span>Smoking</span></a></li><li><a href="javascript:void(0)" class="option0"><input type="checkbox" id="option01">&nbsp;<span>ACL Tear</span></a></li><li><a href="javascript:void(0)" class="obesity"><input type="checkbox" id="obesity">&nbsp;<span>Obesity</span></a></li><li><a href="javascript:void(0)" class="diabetes"><input type="checkbox" id="diabetes">&nbsp;<span>Type II Diabetes</span></a></li><li><a href="javascript:void(0)" class="option1"><input type="checkbox" id="option11">&nbsp;<span>Puberty</span></a></li></ul></div>
+<div class='content-table' id='Nutrition'>
+<p class='header'>Nutrition</p>
+<p class='content' id='goals'>
+Develop and maintain healthy eating habits and routines. <br>Promote bone strength and growth.
+</p>
+<p class='content' id='instruction'>
+Eat breakfast every day to boosts the body's metabolism, improve energy and alertness, and reduce risk of obesity. <br>Avoid junk and processed foods.<br>Get 4 servings of calcium every day for bone growth and strength.<br>Consume vitamin D enriched milk, eggs, and fatty fish like salmon to improve absorption of calcium.
+</p>
+<p class='content' id='review'>
+Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. 
+</p>
+</div>
+<div class='content-table' id='PhysicalActivity'>
+<p class='header'>Physical Activity</p>
+<p class='content' id='goals'>
+Maintain regular physical activity.<br>Strengthen bones and muscles.<br>Ensure adequate time for rest and relaxation.
+</p>
+<p class='content' id='instruction'>
+Get at least 60 minutes of mostly aerobic exercise.<br>Get muscle and bone strengthening exercise 3 days a week.
+</p>
+<p class='content' id='review'>
+Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.
+</p>
+</div>
+<div class='content-table' id='Sleep'>
+<p class='header'>Sleep</p>
+<p class='content' id='goals'>
+Get enough sleep.<br>Get on a regular sleep schedule.
+</p>
+<p class='content' id='instruction'>
+Prioritize 8-10 hours of sleep for active, growing bodies.<br>Avoid sleeping in weekend to maintain a consistent routine.<br>Stop using computer, phone, and TV 1 hour before bed for a better quality sleep. 
+</p>
+<p class='content' id='review'>
+Assess general morning energy levels at next check-up.
+</p>
+</div>
+<div class='content-table' id='MentalResilience'>
+<p class='header'>Mental Resilience</p>
+<p class='content' id='goals'>
+
+</p>
+<p class='content' id='instruction'>
+
+</p>
+<p class='content' id='review'>
+
+</p>
+</div>
+<div class='content-table' id='ManagingMedication'>
+<p class='header'>Managing Medication</p>
+<p class='content' id='goals'>
+Ensure vaccinations are received.
+</p>
+<p class='content' id='instruction'>
+Schedule next HPV vaccination in 3 months.<br>Get influenza vaccine in the fall.
+</p>
+<p class='content' id='review'>
+Assess upcoming vaccinations.
+</p>
+</div>
+<div class='content-table' id='SexualHealth'>
+<p class='header'>Sexual Health</p>
+<p class='content' id='goals'>
+
+</p>
+<p class='content' id='instruction'>
+
+</p>
+<p class='content' id='review'>
+
+</p>
+</div>
+<div class='content-table' id='CessationofBadHabits'>
+<p class='header'>Cessation of Bad Habits</p>
+<p class='content' id='goals'>
+Get less screen time.<br>Reduce bad snacking behaviors.
+</p>
+<p class='content' id='instruction'>
+Spend less than 2 hours of continuous time on screens - try timers, parental controls.<br>Keep only healthy snacks (fruits, vegetables, nuts, whole grains) in the house.
+</p>
+<p class='content' id='review'>
+Assess for barriers to achieving goal screen time.<br>Review satisfaction/adherence to snacking goals.
+</p>
+</div>
+<div class='content-table' id='TrackingVitals'>
+<p class='header'>Tracking Vitals</p>
+<p class='content' id='goals'>
+Track height and weight.
+</p>
+<p class='content' id='instruction'>
+Track height and weight once a month with phone application or pencil and paper.
+</p>
+<p class='content' id='review'>
+Schedule yearly physical exams with pediatrician.<br>Test regularly for anemia.
+</p>
+</div>
+<div class='content-table' id='ManagingADLs'>
+<p class='header'>Managing ADLs</p>
+<p class='content' id='goals'>
+Remembering to brush teeth daily. 
+</p>
+<p class='content' id='instruction'>
+Leave a reminder on the bathroom sink, or set an alarm.
+</p>
+<p class='content' id='review'>
+
+</p>
+</div>
+</div>
+
+</div>
+<div class='profile-pane'>
+<script src="../../old/javascripts/features/careplans/checkboxes.js?1655406650" type="text/javascript"></script>
+<div class='container-fluid profile desktop' data-index='1' data-patient='Reggie'>
+<div class='row'>
+<div class='col-md-3'>
+<img src='/old/images/features/careplans/reggie_norm.png'>
+</div>
+<div class='col-md-9'>
+<h6 class='blue'>Patient Summary</h6>
+<span class='summary'>Reggie is a 35 year old, successful, driven accountant who works 8am-6pm in downtown Boston and commutes home to a nearby suburb. He enjoys gaming and occasionally going out to drink at bars or clubs with friends during the week. On the weekends, Reggie likes to swim at the local fitness center or go on walks with his labradoodle. Reggie is in long distance relationship, and sees his boyfriend about once every 2 weeks.</span>
+</div>
+</div>
+<div class='row'>
+<div class='left col-md-6' id='col'>
+<h6 class='blue'>Health Concerns (Choose 2)</h6>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='depression'>
+<input id='depression' type='checkbox'>Depression<span class="superscript">10-14</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='smoking'>
+<input id='smoking' type='checkbox'>Smoking</input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option0'>
+<input id='option0' type='checkbox'>Caregiver<span class='superscript'>31-32</span></input>
+</label>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='obesity'>
+<input id='obesity' type='checkbox'>Obesity<span class="superscript">22-24</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='diabetes'>
+<input id='diabetes' type='checkbox'>Type II Diabetes<span class="superscript">18-21</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option1'>
+<input id='option1' type='checkbox'>Chlamydia<span class='superscript'>30</span></input>
+</label>
+</div>
+</div>
+</div>
+<div class='right col-md-6' id='col'>
+<h6 class='blue'>Care Team</h6>
+<p class='care-team'>Primary Care Physician, Boyfriend, Mother, Friends</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 care-plan' id='col'>
+<table class='table table-bordered'>
+<tr class='headers'>
+<td class='header blank'></td>
+<td class='header blue'>Goals</td>
+<td class='header blue'>Instructions & Interventions</td>
+<td class='header blue'>Review</td>
+</tr>
+<tr id='Nutrition'>
+<td class='header blue'>Nutrition</td>
+<td class='content' id='goals'>
+<p>Eat a healthier, plant-based diet.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Eat 2-3 servings to fish a week (for the fish oils).<br>Replace the fatty snacks consumed when gaming, with a fresh fruit.<br>Avoid the free high-fat snack foods at the accounting firm.<br>Meatless Mondays.</p>
+</td>
+<td class='content' id='review'>
+<p>Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. </p>
+</td>
+</tr>
+<tr id='PhysicalActivity'>
+<td class='header blue'>Physical Activity</td>
+<td class='content' id='goals'>
+<p>Sit less and maintain current body weight by staying active.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Get 30 minutes of physical activity a day.<br>Join a local swim team that meets twice a week.<br>Use a bike for the 30 minute work commute.<br>Find alternate bike paths to stay motivated and interested in the exercise.</p>
+</td>
+<td class='content' id='review'>
+<p>Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.</p>
+</td>
+</tr>
+<tr id='Sleep'>
+<td class='header blue'>Sleep</td>
+<td class='content' id='goals'>
+<p>Feel more awake in the mornings for work. </p>
+</td>
+<td class='content' id='instruction'>
+<p>Turn the games/computer off at least an hour before bed.<br>Go to bed by midnight to sleep at least 8 hours for the 8am job.</p>
+</td>
+<td class='content' id='review'>
+<p>Review general morning energy levels a month from now.</p>
+</td>
+</tr>
+<tr id='MentalResilience'>
+<td class='header blue'>Mental Resilience</td>
+<td class='content' id='goals'>
+<p>Reduce the stress from partner often being absent.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Call partner by next month, and communicate the reason for the stress.<br>If interest in hobbies are still lacking two weeks from now, seek appointment with specialized mental health professional.<br>Focus on meeting with friends more often. </p>
+</td>
+<td class='content' id='review'>
+<p>Review mental stress condition with a care provider.</p>
+</td>
+</tr>
+<tr id='ManagingMedication'>
+<td class='header blue'>Managing Medication</td>
+<td class='content' id='goals'>
+<p>Get vitamin D levels up to the normal range to lower the risk of depression.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Take 2000IUs of vitamin D3 every day.<br>Place daily vitamins by the coffee maker to incorporate them into daily routine.</p>
+</td>
+<td class='content' id='review'>
+<p>Review vitamin D levels every 3 months. </p>
+</td>
+</tr>
+<tr id='SexualHealth'>
+<td class='header blue'>Sexual Health</td>
+<td class='content' id='goals'>
+<p>Have an understanding of personal sexual health status.<br>Understand how to avoid HIV infection and other sexually transmitted diseases (STDs).</p>
+</td>
+<td class='content' id='instruction'>
+<p>Conduct monthly self-exams for testicular cancer.<br>Make appointment this month with primary provider for HIV screening.<br>Use condoms to form a barrier between the penis and anus, or mouth.</p>
+</td>
+<td class='content' id='review'>
+<p>Review results from HIV screening.</p>
+</td>
+</tr>
+<tr id='CessationofBadHabits'>
+<td class='header blue'>Cessation of Bad Habits</td>
+<td class='content' id='goals'>
+<p>Reduce alcohol intake by half of current consumption.</p>
+</td>
+<td class='content' id='instruction'>
+<p>To limit alcohol consumption, drink water for every other friend meeting.</p>
+</td>
+<td class='content' id='review'>
+<p>Review general alcohol consumption levels.</p>
+</td>
+</tr>
+<tr id='TrackingVitals'>
+<td class='header blue'>Tracking Vitals</td>
+<td class='content' id='goals'>
+<p>Be able to consistently keep track of current body weight.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Place the bathroom scale in front of the counter as a daily reminder to check body weight.</p>
+</td>
+<td class='content' id='review'>
+<p>Review trends in body weight with a primary care provider.</p>
+</td>
+</tr>
+<tr id='ManagingADLs'>
+<td class='header blue'>Managing ADLs</td>
+<td class='content' id='goals'>
+<p>Manage time to bike to work in the mornings. </p>
+</td>
+<td class='content' id='instruction'>
+<p>Set an alarm to wake up half an hour earlier than usual.</p>
+</td>
+<td class='content' id='review'>
+<p>Review biking frequency in the commute.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='profile mobile' data-index='1' data-patient='Reggie'>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="name">Reggie</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuName"><li data-id="1"><a href="javascript:void(0)">Isabella</a></li><li data-id="2"><a href="javascript:void(0)">Reggie</a></li><li data-id="3"><a href="javascript:void(0)">Donna</a></li></ul></div>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="selection">Health Concern</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuSelection"><li><a href="javascript:void(0)" class="depression"><input type="checkbox" id="depression">&nbsp;<span>Depression</span></a></li><li><a href="javascript:void(0)" class="smoking"><input type="checkbox" id="smoking">&nbsp;<span>Smoking</span></a></li><li><a href="javascript:void(0)" class="option0"><input type="checkbox" id="option02">&nbsp;<span>Caregiver</span></a></li><li><a href="javascript:void(0)" class="obesity"><input type="checkbox" id="obesity">&nbsp;<span>Obesity</span></a></li><li><a href="javascript:void(0)" class="diabetes"><input type="checkbox" id="diabetes">&nbsp;<span>Type II Diabetes</span></a></li><li><a href="javascript:void(0)" class="option1"><input type="checkbox" id="option12">&nbsp;<span>Chlamydia</span></a></li></ul></div>
+<div class='content-table' id='Nutrition'>
+<p class='header'>Nutrition</p>
+<p class='content' id='goals'>
+Eat a healthier, plant-based diet.
+</p>
+<p class='content' id='instruction'>
+Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Eat 2-3 servings to fish a week (for the fish oils).<br>Replace the fatty snacks consumed when gaming, with a fresh fruit.<br>Avoid the free high-fat snack foods at the accounting firm.<br>Meatless Mondays.
+</p>
+<p class='content' id='review'>
+Review eating habits next check-up.<br>Assess for any barriers to nutrition plan adherence. 
+</p>
+</div>
+<div class='content-table' id='PhysicalActivity'>
+<p class='header'>Physical Activity</p>
+<p class='content' id='goals'>
+Sit less and maintain current body weight by staying active.
+</p>
+<p class='content' id='instruction'>
+Get 30 minutes of physical activity a day.<br>Join a local swim team that meets twice a week.<br>Use a bike for the 30 minute work commute.<br>Find alternate bike paths to stay motivated and interested in the exercise.
+</p>
+<p class='content' id='review'>
+Review weight trend and adjust plan accordingly.<br>Assess for barriers to exercise plan adherence.
+</p>
+</div>
+<div class='content-table' id='Sleep'>
+<p class='header'>Sleep</p>
+<p class='content' id='goals'>
+Feel more awake in the mornings for work. 
+</p>
+<p class='content' id='instruction'>
+Turn the games/computer off at least an hour before bed.<br>Go to bed by midnight to sleep at least 8 hours for the 8am job.
+</p>
+<p class='content' id='review'>
+Review general morning energy levels a month from now.
+</p>
+</div>
+<div class='content-table' id='MentalResilience'>
+<p class='header'>Mental Resilience</p>
+<p class='content' id='goals'>
+Reduce the stress from partner often being absent.
+</p>
+<p class='content' id='instruction'>
+Call partner by next month, and communicate the reason for the stress.<br>If interest in hobbies are still lacking two weeks from now, seek appointment with specialized mental health professional.<br>Focus on meeting with friends more often. 
+</p>
+<p class='content' id='review'>
+Review mental stress condition with a care provider.
+</p>
+</div>
+<div class='content-table' id='ManagingMedication'>
+<p class='header'>Managing Medication</p>
+<p class='content' id='goals'>
+Get vitamin D levels up to the normal range to lower the risk of depression.
+</p>
+<p class='content' id='instruction'>
+Take 2000IUs of vitamin D3 every day.<br>Place daily vitamins by the coffee maker to incorporate them into daily routine.
+</p>
+<p class='content' id='review'>
+Review vitamin D levels every 3 months. 
+</p>
+</div>
+<div class='content-table' id='SexualHealth'>
+<p class='header'>Sexual Health</p>
+<p class='content' id='goals'>
+Have an understanding of personal sexual health status.<br>Understand how to avoid HIV infection and other sexually transmitted diseases (STDs).
+</p>
+<p class='content' id='instruction'>
+Conduct monthly self-exams for testicular cancer.<br>Make appointment this month with primary provider for HIV screening.<br>Use condoms to form a barrier between the penis and anus, or mouth.
+</p>
+<p class='content' id='review'>
+Review results from HIV screening.
+</p>
+</div>
+<div class='content-table' id='CessationofBadHabits'>
+<p class='header'>Cessation of Bad Habits</p>
+<p class='content' id='goals'>
+Reduce alcohol intake by half of current consumption.
+</p>
+<p class='content' id='instruction'>
+To limit alcohol consumption, drink water for every other friend meeting.
+</p>
+<p class='content' id='review'>
+Review general alcohol consumption levels.
+</p>
+</div>
+<div class='content-table' id='TrackingVitals'>
+<p class='header'>Tracking Vitals</p>
+<p class='content' id='goals'>
+Be able to consistently keep track of current body weight.
+</p>
+<p class='content' id='instruction'>
+Place the bathroom scale in front of the counter as a daily reminder to check body weight.
+</p>
+<p class='content' id='review'>
+Review trends in body weight with a primary care provider.
+</p>
+</div>
+<div class='content-table' id='ManagingADLs'>
+<p class='header'>Managing ADLs</p>
+<p class='content' id='goals'>
+Manage time to bike to work in the mornings. 
+</p>
+<p class='content' id='instruction'>
+Set an alarm to wake up half an hour earlier than usual.
+</p>
+<p class='content' id='review'>
+Review biking frequency in the commute.
+</p>
+</div>
+</div>
+
+</div>
+<div class='profile-pane'>
+<script src="../../old/javascripts/features/careplans/checkboxes.js?1655406650" type="text/javascript"></script>
+<div class='container-fluid profile desktop' data-index='2' data-patient='Donna'>
+<div class='row'>
+<div class='col-md-3'>
+<img src='/old/images/features/careplans/donna_norm.png'>
+</div>
+<div class='col-md-9'>
+<h6 class='blue'>Patient Summary</h6>
+<span class='summary'>Donna is a 68 year old, retired bank clerk living in downtown Chicago with her husband. She enjoys doing crossword puzzles and watching TV at night, and therefore doesn't leave the apartment much. Donna often feels isolated and lonely, and suffers from chronic neck pain from sitting for long periods of time.</span>
+</div>
+</div>
+<div class='row'>
+<div class='left col-md-6' id='col'>
+<h6 class='blue'>Health Concerns (Choose 2)</h6>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='depression'>
+<input id='depression' type='checkbox'>Depression<span class="superscript">10-14</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='smoking'>
+<input id='smoking' type='checkbox'>Smoking</input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option0'>
+<input id='option0' type='checkbox'>Dementia<span class='superscript'>33-37</span></input>
+</label>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='checkbox'>
+<label class='obesity'>
+<input id='obesity' type='checkbox'>Obesity<span class="superscript">22-24</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='diabetes'>
+<input id='diabetes' type='checkbox'>Type II Diabetes<span class="superscript">18-21</span></input>
+</label>
+</div>
+<div class='checkbox'>
+<label class='option1'>
+<input id='option1' type='checkbox'>Hypertension<span class='superscript'>25-29</span></input>
+</label>
+</div>
+</div>
+</div>
+<div class='right col-md-6' id='col'>
+<h6 class='blue'>Care Team</h6>
+<p class='care-team'>Primary Care Physician, Daughter, Husband, Neighbor</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 care-plan' id='col'>
+<table class='table table-bordered'>
+<tr class='headers'>
+<td class='header blank'></td>
+<td class='header blue'>Goals</td>
+<td class='header blue'>Instructions & Interventions</td>
+<td class='header blue'>Review</td>
+</tr>
+<tr id='Nutrition'>
+<td class='header blue'>Nutrition</td>
+<td class='content' id='goals'>
+<p>Eat a healthier, plant-based diet.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Avoid processed meals by signing up for Meals on Wheels delivery once a week to help deliver healthier groceries to cook with.</p>
+</td>
+<td class='content' id='review'>
+<p>Review eating habits next month.<br>Review any barriers to nutrition plan adherence. </p>
+</td>
+</tr>
+<tr id='PhysicalActivity'>
+<td class='header blue'>Physical Activity</td>
+<td class='content' id='goals'>
+<p>Get more active.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Begin with a local community center that offers exercise classes for seniors and has sessions at least 3 times a week.</p>
+</td>
+<td class='content' id='review'>
+<p>Review mobility and movement changes 4 months from now.</p>
+</td>
+</tr>
+<tr id='Sleep'>
+<td class='header blue'>Sleep</td>
+<td class='content' id='goals'>
+<p>Reduce the time it takes to get to sleep.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Buy soft earplugs for daily use to reduce noise coming from the windows.<br>Turn off all TV lighting at least an hour before sleeping.</p>
+</td>
+<td class='content' id='review'>
+<p>Review quality of sleep next month and consider a sleep aid.</p>
+</td>
+</tr>
+<tr id='MentalResilience'>
+<td class='header blue'>Mental Resilience</td>
+<td class='content' id='goals'>
+<p>Increase social interaction and community involvement.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Join a local community organization to social engage with people around a hobby.</p>
+</td>
+<td class='content' id='review'>
+<p>Review satisfaction with community involvement or barriers to social interaction.</p>
+</td>
+</tr>
+<tr id='ManagingMedication'>
+<td class='header blue'>Managing Medication</td>
+<td class='content' id='goals'>
+<p>Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.</p>
+</td>
+<td class='content' id='review'>
+<p>Test vitamin levels every 6 months and adjust dosage accordingly.</p>
+</td>
+</tr>
+<tr id='SexualHealth'>
+<td class='header blue'>Sexual Health</td>
+<td class='content' id='goals'>
+<p>Increase sexual activity with husband.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Consider having sex in the mornings, or at times of day when both parties are most rested.</p>
+</td>
+<td class='content' id='review'>
+<p>Review satisfaction with sexual activity or barriers to satisfaction.</p>
+</td>
+</tr>
+<tr id='CessationofBadHabits'>
+<td class='header blue'>Cessation of Bad Habits</td>
+<td class='content' id='goals'>
+<p>Reduce unhealthy snacking when bored.<br>Improve posture to reduce neck pain and stiffness.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Keep only health snacks (fruits, vegetables, nuts) in the house.<br>Find hobbies that occupy the hands to fill periods of boredom.<br>Purchase a chair with strong ergonomic back support to prevent hunching forward when watching TV at night.<br>Purchase neck support pillow for daily use when sleeping.</p>
+</td>
+<td class='content' id='review'>
+<p>Review quality of neck posture in 6 months, refer to Orthopedic if no improvement.</p>
+</td>
+</tr>
+<tr id='TrackingVitals'>
+<td class='header blue'>Tracking Vitals</td>
+<td class='content' id='goals'>
+<p>Track weight, blood pressure, cholesterol, and blood sugar levels to screen for common chronic conditions.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Schedule next annual check-up. </p>
+</td>
+<td class='content' id='review'>
+<p>Review results from check-up with a care provider to determine additional steps that may be needed.</p>
+</td>
+</tr>
+<tr id='ManagingADLs'>
+<td class='header blue'>Managing ADLs</td>
+<td class='content' id='goals'>
+<p>Prevent future dental problems by prioritizing regular dental hygiene.</p>
+</td>
+<td class='content' id='instruction'>
+<p>Set a daily automatic alarm as a reminder to brush teeth. A digital device, a clock, or watch reminder may all be used.</p>
+</td>
+<td class='content' id='review'>
+<p>Review dental health in 6 months.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='profile mobile' data-index='2' data-patient='Donna'>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="name">Donna</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuName"><li data-id="1"><a href="javascript:void(0)">Isabella</a></li><li data-id="2"><a href="javascript:void(0)">Reggie</a></li><li data-id="3"><a href="javascript:void(0)">Donna</a></li></ul></div>
+<div class='dropdown'><span class="dropdown-toggle" type="button" id="dropdownMenuSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="selection">Health Concern</span><span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenuSelection"><li><a href="javascript:void(0)" class="depression"><input type="checkbox" id="depression">&nbsp;<span>Depression</span></a></li><li><a href="javascript:void(0)" class="smoking"><input type="checkbox" id="smoking">&nbsp;<span>Smoking</span></a></li><li><a href="javascript:void(0)" class="option0"><input type="checkbox" id="option03">&nbsp;<span>Dementia</span></a></li><li><a href="javascript:void(0)" class="obesity"><input type="checkbox" id="obesity">&nbsp;<span>Obesity</span></a></li><li><a href="javascript:void(0)" class="diabetes"><input type="checkbox" id="diabetes">&nbsp;<span>Type II Diabetes</span></a></li><li><a href="javascript:void(0)" class="option1"><input type="checkbox" id="option13">&nbsp;<span>Hypertension</span></a></li></ul></div>
+<div class='content-table' id='Nutrition'>
+<p class='header'>Nutrition</p>
+<p class='content' id='goals'>
+Eat a healthier, plant-based diet.
+</p>
+<p class='content' id='instruction'>
+Eat more vegetables, fruit, nuts, beans, and whole grains, less meat.<br>Avoid red meats, processed meats, or cured meats.<br>Avoid processed meals by signing up for Meals on Wheels delivery once a week to help deliver healthier groceries to cook with.
+</p>
+<p class='content' id='review'>
+Review eating habits next month.<br>Review any barriers to nutrition plan adherence. 
+</p>
+</div>
+<div class='content-table' id='PhysicalActivity'>
+<p class='header'>Physical Activity</p>
+<p class='content' id='goals'>
+Get more active.
+</p>
+<p class='content' id='instruction'>
+Begin with a local community center that offers exercise classes for seniors and has sessions at least 3 times a week.
+</p>
+<p class='content' id='review'>
+Review mobility and movement changes 4 months from now.
+</p>
+</div>
+<div class='content-table' id='Sleep'>
+<p class='header'>Sleep</p>
+<p class='content' id='goals'>
+Reduce the time it takes to get to sleep.
+</p>
+<p class='content' id='instruction'>
+Buy soft earplugs for daily use to reduce noise coming from the windows.<br>Turn off all TV lighting at least an hour before sleeping.
+</p>
+<p class='content' id='review'>
+Review quality of sleep next month and consider a sleep aid.
+</p>
+</div>
+<div class='content-table' id='MentalResilience'>
+<p class='header'>Mental Resilience</p>
+<p class='content' id='goals'>
+Increase social interaction and community involvement.
+</p>
+<p class='content' id='instruction'>
+Join a local community organization to social engage with people around a hobby.
+</p>
+<p class='content' id='review'>
+Review satisfaction with community involvement or barriers to social interaction.
+</p>
+</div>
+<div class='content-table' id='ManagingMedication'>
+<p class='header'>Managing Medication</p>
+<p class='content' id='goals'>
+Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.
+</p>
+<p class='content' id='instruction'>
+Improve vitamin B6, B12, and Folate deficiencies by taking supplements regularly.
+</p>
+<p class='content' id='review'>
+Test vitamin levels every 6 months and adjust dosage accordingly.
+</p>
+</div>
+<div class='content-table' id='SexualHealth'>
+<p class='header'>Sexual Health</p>
+<p class='content' id='goals'>
+Increase sexual activity with husband.
+</p>
+<p class='content' id='instruction'>
+Consider having sex in the mornings, or at times of day when both parties are most rested.
+</p>
+<p class='content' id='review'>
+Review satisfaction with sexual activity or barriers to satisfaction.
+</p>
+</div>
+<div class='content-table' id='CessationofBadHabits'>
+<p class='header'>Cessation of Bad Habits</p>
+<p class='content' id='goals'>
+Reduce unhealthy snacking when bored.<br>Improve posture to reduce neck pain and stiffness.
+</p>
+<p class='content' id='instruction'>
+Keep only health snacks (fruits, vegetables, nuts) in the house.<br>Find hobbies that occupy the hands to fill periods of boredom.<br>Purchase a chair with strong ergonomic back support to prevent hunching forward when watching TV at night.<br>Purchase neck support pillow for daily use when sleeping.
+</p>
+<p class='content' id='review'>
+Review quality of neck posture in 6 months, refer to Orthopedic if no improvement.
+</p>
+</div>
+<div class='content-table' id='TrackingVitals'>
+<p class='header'>Tracking Vitals</p>
+<p class='content' id='goals'>
+Track weight, blood pressure, cholesterol, and blood sugar levels to screen for common chronic conditions.
+</p>
+<p class='content' id='instruction'>
+Schedule next annual check-up. 
+</p>
+<p class='content' id='review'>
+Review results from check-up with a care provider to determine additional steps that may be needed.
+</p>
+</div>
+<div class='content-table' id='ManagingADLs'>
+<p class='header'>Managing ADLs</p>
+<p class='content' id='goals'>
+Prevent future dental problems by prioritizing regular dental hygiene.
+</p>
+<p class='content' id='instruction'>
+Set a daily automatic alarm as a reminder to brush teeth. A digital device, a clock, or watch reminder may all be used.
+</p>
+<p class='content' id='review'>
+Review dental health in 6 months.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class='part four'>
+<!-- /main content -->
+<h1>How Care Plans Started</h1>
+<ul class='history-items'>
+<li class='history-item'>
+<h6 class='history-item__title'>31st BC-15th Century</h6>
+<p class='history-item__content'>Much of medical history was focused in reactive care, rather than taking preventative measures for the individual’s health. In the middle ages especially, the idea of preventative care could also have been stunted by the explanations of medical phenomena connected to spirituality and religious belief systems. Preceding modern medicine, most of the care regimens provided to patients were focused on either external symptoms, or a spiritual or magical basis.<span class='superscript'>54</span></p>
+</li>
+<li class='history-item'>
+<h6 class='history-item__title'>6th-19th Century</h6>
+<p class='history-item__content'>The 16th to 19th century was a period of heavy scientific discovery, leading to the transition of supernatural explanations to natural explanations for disease and illness.<span class='superscript'>55</span> People began to see illness as something that could eventually be eradicated, and saw health as a natural state of the body that should be maintained and protected, further stepping away from traditional notions of supernatural explanations or divine punishment.<span class='superscript'>56,57</span></p>
+</li>
+<li class='history-item'>
+<h6 class='history-item__title'>1930s</h6>
+<p class='history-item__content'>The 1930s marked the entry of clinically driven care plans into the <span id="nursing_span" class="clickable_span">nursing</span> field. When stays in the hospital were longer, there was time to implement written plans.<span class='superscript'>58</span> Nursing team leads would also use care plans as a guide for the less-educated members of the team.<span class='superscript'>59</span></p>
+</li>
+<li class='history-item'>
+<h6 class='history-item__title'>1970s</h6>
+<p class='history-item__content'>There were many fields involved in the emergence of<span id="life_care_planning_span" class="clickable_span">life care planning</span>during this time. The converging principles of the fields of experimental analysis of behavior<span id="EAB_span" class="clickable_span">(EAB)</span>,<span id='developmental_psychology_span' class="clickable_span">developmental psychology</span>, and<span id="case_management_span" class="clickable_span">case management</span>established life care planning factors: a summative statement, communication tool, preventative planning, basic components, individualized plans, and needs come first ideology.<span class='superscript'>60</span></p>
+</li>
+<li class='history-item'>
+<h6 class='history-item__title'>1980s</h6>
+<p class='history-item__content'>Starting in the 1980s and in the following decades, life care planners were involved in consultations with insurance carriers and also with attorneys involved in litigation. Life care planning played a huge initial role in the field of <span id="litigation_span" class="clickable_span">litigation</span>. It has since expanded into elder care, chronic illness and discharge planning. It has also expanded the number and types of professions who can each be involved in a part of care planning.<span class='superscript'>61</span></p>
+</li>
+<li class='history-item'>
+<h6 class='history-item__title'>2000s</h6>
+<p class='history-item__content'>The breadth of professionals and care providers within life care planning expanded, with individuals coming from rehabilitation counseling, rehabilitation nursing, physiatry, and case management professions. Both paper based and digital technology based care plans were regularly being used by patients and their care providers. A proliferation of digital technology based care plans also began to take hold in later years. Healthtap, Amwell, Better., HelloDoctor, HealthKit, My Chart, Practice Fusion, Health Vault, AskMD, Happify, and Healarium are all more well known examples.<span class='superscript'>61</span></p>
+</li>
+<li class='history-item last-year'>
+<h6 class='history-item__title'>Current</h6>
+<p class='history-item__content'>As of January 2015, CMS transitioned Medicare to the more quality-based practice of reinbursing for care management of eligible patients with 2 or more chronic conditions. Other private insurance companies are beginning to follow suit to prioritize consistent, preventative care facilitated by patient-accessible care plans.  is has encouraged the growth of digital care planning services that aid chronic care management, such as CareSync, Wellframe, Bridge Patient Portal, and others. Many providers also utilize physical care planning materials like handouts and pamphlets for specific conditions.  e pamphlet example below is a care plan for controlling high cholesterol. Inside are education about the diagnosis, room for high-level goal setting, slots to insert Care Cards for individal step goals, and the contractual agreement of the care team to better the patient’s health.<span class="superscript">5</span></p>
+</li>
+<div class='popup-box' id='nursing'>
+<div class='image'>
+<img src='/old/images/features/careplans/nursing_img.jpg'>
+</div>
+<div class='popup-content'>
+<h6>Nursing</h6>
+<p>Virginia Henderson, “The Nightingale of Modern Nursing”, was a clinically recognized nurse and instructor in the 1900s. She designed the basic nursing curriculum for the National League for Nursing that taught a patient- centered approach focused on nursing problems rather than medical diagnoses.<span class='superscript'>65</span></p>
+</div>
+<div class='arrow'></div>
+</div>
+<div class='popup-box' id='life_care'>
+<div class='image'>
+<img src='/old/images/features/careplans/life_care_planning_img.jpg'>
+<a href='https://www.flickr.com/photos/dominikgolenia/527517137'>Photo by Golenia, Dominik</a>
+</div>
+<div class='popup-content'>
+<h6>Life Care Planning</h6>
+<p>Life care plans started to develop in the 1970s after the convergence of research within several fields. Catastrophic disability research in the mid 70s paved the way for the modern life care plan.<span class='superscript'>62,63</span></p>
+</div>
+<div class='arrow'></div>
+</div>
+<div class='popup-box' id='EAB'>
+<div class='image'>
+<img src='/old/images/features/careplans/EAB_img.jpg'>
+<a href='https://commons.wikimedia.org/wiki/File:Speech_Client_WEB_(5).jpg'>Photo by Madmike1952</a>
+</div>
+<div class='popup-content'>
+<h6>Experimental Analysis of Behavior</h6>
+<p>This subspecialty of psychology provided research in charting behavioral changes over long periods of time. These behaviors could then be deconstructed into discrete actions that could be analyzed by the researcher. The technique of charting provided the case management professional with a tool in identifying individual components of care for a specific patient.<span class='superscript'>64</span></p>
+</div>
+<div class='arrow'></div>
+</div>
+<div class='popup-box' id='developmental'>
+<div class='image'>
+<img src='/old/images/features/careplans/developmental_psychology_img.jpg'>
+<a href='https://commons.wikimedia.org/wiki/File:US_Army_50899_Child_Development_Center_III_receives_national_accreditation.jpg'>Photo by Rhodes, Lisa R</a>
+</div>
+<div class='popup-content'>
+<h6>Developmental Psychology</h6>
+<p>Developmental psychology provided a practical role in the development of life care planning. Through conducting research on children with cerebral palsy, it was discovered that the overwhelming complexity of the needs of the patient required that a structured reference tool be provided as a roadmap of care. This provided the beginning of the framework for life care planning.<span class='superscript'>60</span></p>
+</div>
+<div class='arrow'></div>
+</div>
+<div class='popup-box' id='case_management'>
+<div class='image'>
+<img src='/old/images/features/careplans/case_management_img.jpg'>
+<a href='https://www.flickr.com/photos/usdagov/8423828231'>Photo by USDA</a>
+</div>
+<div class='popup-content'>
+<h6>Case Management</h6>
+<p>Case management is the collaborative process of assessing, planning, implementing, and evaluating the options and services for a person’s health needs. In the early 1970s, the case management field began seeing the value of a detailed life care plan and became more involved with providing integrated services for those with long-term medical needs.<span class='superscript'>61</span></p>
+</div>
+<div class='arrow'></div>
+</div>
+<div class='popup-box' id='litigation'>
+<div class='image'>
+<img src='/old/images/features/careplans/litigation_img.jpg'>
+<a href='https://www.flickr.com/photos/truthrevealed/12293483405'>Photo by Michael</a>
+</div>
+<div class='popup-content'>
+<h6>Litigation</h6>
+<p>Beginning in the 1980s, Life care plans began to gain greater acknowledgement through the help of the litigation field in cases involving debilitating injury. Damages in Tort Actions (1981) was the first published reference to life care planning through the analysis of personal injury cases.<span class='superscript'>60</span></p>
+</div>
+<div class='arrow'></div>
+</div>
+</ul>
+<img src='/old/images/features/careplans/Pamphlet.png'>
+<div class='coming-soon'>
+<a href='/features/careplans/part-2.html'>
+<div class='coming-soon-box row'>
+<div class='col-sm-4'>
+<img src='/old/images/features/careplans/next_feature.png'>
+</div>
+<div class='coming-soon-content col-sm-8'>
+<div class='content'>
+<p class='title'>Care Plans</p>
+<p class='subtitle'>Part 2: Current Landscape</p>
+<p>In the second of this three part series, the Care Planning process and who is involved will be seen in detail. Barriers still exist in it’s implementation and current form, and a range of digital products will be compared to gain a general view of the current state of care planning.</p>
+</div>
+<img class='svg' src='/old/images/features/careplans/icons/arrow-gray.svg'>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class='credit-wrapper'>
+<div class='row'></div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src='/old/javascripts/features/careplans/case_studies.js'>
+</script>
+<div id='credits'>
+<h1>Authors</h1>
+<div class='authors container-fluid'>
+<div class='row'>
+<div class='author col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/beckett.jpg'>
+</div>
+<div class='info'>
+<p>GoInvo</p>
+<p class='name'>Beckett Rucker, MPD<br><small><a href="https://twitter.com/beckettrucker" target="_blank">@beckettrucker</a></small></p>
+<p class='bio'>Beckett is designer, product strategist, and researcher. She concentrates on designing beautiful and surprising health services and systems from the skintop to celltop to desktop. She holds bachelors of arts in psychology and studio art from Rice University and a master of product development from Carnegie Mellon University. She has worked on design and service strategy for companies such as Seniorlink, Johnson & Johnson, and Updox Patient Portals.</p>
+</div>
+</div>
+<div class='author col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/edwin.jpg'>
+</div>
+<div class='info'>
+<p>GoInvo</p>
+<p class='name'>Edwin Choi, MA</p>
+<p class='bio'>Edwin is a biologist turned designer. Combining the sciences and art, he orchestrates healthcare software experiences to be beautiful and clinically refined. Edwin is a graduate of Washington University, and has a masters in biomedical design from Johns Hopkins University. He has worked on projects for companies including Partners Healthcare and Notovox.</p>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='author col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/danny.jpg'>
+</div>
+<div class='info'>
+<p>Health Hats</p>
+<p class='name'>Danny van Leeuwen, RN, MPH, CPHQ<br><small><a href="https://twitter.com/HealthHats" target="_blank">@HealthHats</a></small></p>
+<p class='bio'>Danny is an action catalyst empowering people traveling together toward best health (patients, caregivers, clinicians).  He wears many hats in healthcare: patient with MS, care partner for several family members’ end-of-life journeys, a nurse for 40+ years, an informaticist and a QI leader. Danny’s current work focuses on communication at transitions of care, person-centered health planning, informed decision-making, and technology supporting solutions created with and for people at the center. He has collaborated with PCORI, AHRQ, and MassHealth among others.</p>
+</div>
+</div>
+</div>
+</div>
+<h1>Contributors</h1>
+<div class='contributors container-fluid'>
+<div class='row'>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/yanyang.jpg'>
+</div>
+<div class='info'>
+<p>Web Designer & Developer</p>
+<p class='name'>Yanyang Zhou</p>
+</div>
+</div>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/jenn.jpg'>
+</div>
+<div class='info'>
+<p>Web Designer & Developer</p>
+<p class='name'>Jennifer Patel<br><small><a href="https://twitter.com/catamariface" target="_blank">@catamariface</a></small></p>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/juhan.jpg'>
+</div>
+<div class='info'>
+<p>GoInvo, MIT</p>
+<p class='name'>Juhan Sonin<br><small><a href="http://twitter.com/jsonin" target="_blank">@jsonin</a></small></p>
+</div>
+</div>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/jeffbelden.jpg'>
+</div>
+<div class='info'>
+<p>University of Missouri | <a href="http://toomanyclicks.com" target="_blank">toomanyclicks.com</a></p>
+<p class='name'>Jeff Belden, MD<br><small><a href="https://twitter.com/jeffbelden">@jeffbelden</a></small></p>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/joycelee.jpeg'>
+</div>
+<div class='info'>
+<p>University of Michigan</p>
+<p class='name'>​​Joyce Lee, MD, MPH<br><small><a href="https://twitter.com/joyclee">@joyclee</a></small></p>
+</div>
+</div>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/janesarasohnkahn.jpg'>
+</div>
+<div class='info'>
+<p>THINK-Health | Health Populi blog | Huffington Post</p>
+<p class='name'>​​Jane Sarasohn-Kahn, MA, MHSA<br><small><a href="https://twitter.com/healthythinker">@healthythinker</a></small></p>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='contributor col-md-6'>
+<div class='image'>
+<img src='/old/images/features/careplans/contrib/harrysleeper.jpg'>
+</div>
+<div class='info'>
+<p>Healthcare Provocateur</p>
+<p class='name'>​​Harry Sleeper<br><small><a href="https://twitter.com/harrysleeper">@harrysleeper</a></small></p>
+</div>
+</div>
+</div>
+</div>
+<div class='reference'>
+<h1>References</h1>
+<ul>
+<li id='reference1'>
+<span>1.</span>
+<a href='https://www.oma.org/Resources/Documents/CoordinatedCarePlan_June2014.pdf'>“Key Elements to Include in a Coordinated Care Plan”.</a>
+<span>OMA. (2014, June). Retrieved November/December, 2015, from https://www.oma.org/Resources/Documents/CoordinatedCarePlan_June2014.pdf</span>
+</li>
+<li id='reference2'>
+<span>2.</span>
+<a href='http://wiki.siframework.org/LCC+Longitudinal+Care+Plan+%28LCP%29+SWG?responseToken=09cf7263041efc0aaad547d5b2bd401fd'>“LCC Longitudinal Care Plan (LCP) SWG”.</a>
+<span>S&I Framework. Retrieved from http://wiki.siframework.org/LCC+Longitudinal+Care+Plan+%28LCP%29+SWG?responseToken=09cf7263041efc0aaad547d5b2bd401fd</span>
+</li>
+<li id='reference3'>
+<span>3.</span>
+<a href='http://www.nhs.uk/Planners/Yourhealth/Pages/Careplan.aspx'>“NHS Guide to long-term conditions and self care: What is a care plan?”</a>
+<span>(n.d.).Retrieved December 21, 2015, from http://www.nhs.uk/Planners/Yourhealth/Pages/Careplan.aspx</span>
+</li>
+<li id='reference4'>
+<span>4.</span>
+<a href='https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/downloads/Stage2_EPCore_15_SummaryCare.pdf'>“Stage 2 Meaningful Use Core Measures”.</a>
+<span>(2015, August). Retrieved from https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/downloads/Stage2_EPCore_15_SummaryCare.pdf</span>
+</li>
+<li id='reference5'>
+<span>5. United States, Department of Health and Human Services.</span>
+<a href='https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/ChronicCareManagement.pdf'>“Chronic Care Management Services”.</a>
+<span>(2015, May). Centers for Medicare and Medicaid Services. Retrieved from https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/ChronicCareManagement.pdf</span>
+</li>
+<li id='reference6'>
+<span>6.</span>
+<a href='http://www.cdc.gov/aging/advancecareplanning/'>“Give Peace of Mind: Advance Care Planning”.</a>
+<span>(2014, Mar). Centers for Disease Control and Prevention. Retrieved 2016, Jan. from http://www.cdc.gov/aging/advancecareplanning/</span>
+</li>
+<li id='reference7'>
+<span>7.</span>
+<a href='https://www.urmc.rochester.edu/strong-memorial/patients-families/health-care-team.aspx'>“Your Healthcare Team”.</a>
+<span>URMC (2016). Retrieved 2016, Jan. from https://www.urmc.rochester.edu/strong-memorial/patients-families/health-care-team.aspx</span>
+</li>
+<li id='reference8'>
+<span>8.</span>
+<a href='https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/downloads/Stage2_EPCore_15_SummaryCare.pdf'>“Stage 2 Eligible Professional Meaningful Use Core Measures Measure 15 of 17”.</a>
+<span>(2015, Aug). CMS. Retrieved from https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/downloads/Stage2_EPCore_15_SummaryCare.pdf</span>
+</li>
+<li id='reference9'>
+<span>9. GoInvo.</span>
+<a href='http://www.carecards.me'>“Care Cards”</a>
+<span>(2016). Retrieved from www.carecards.me</span>
+</li>
+<li id='reference10'>
+<span>10.</span>
+<a href='https://www.nimh.nih.gov/health/topics/depression/index.shtml#part_145399'>“Depression”.</a>
+<span>National Institutes of Health. Retrieved from https://www.nimh.nih.gov/health/topics/depression/index.shtml#part_145399</span>
+</li>
+<li id='reference11'>
+<span>11.</span>
+<a href='https://www.nami.org/Learn-More/Mental-Health-Conditions/Depression/Treatment'>“Depression”.</a>
+<span>(2016). National Alliance on Mental Illness. Retrieved from https://www.nami.org/Learn-More/Mental-Health-Conditions/Depression/Treatment</span>
+</li>
+<li id='reference12'>
+<span>12.</span>
+<a href='https://www.nami.org/Learn-More/Mental-Health-Conditions/Depression/Treatment'>“Depression (Major Depressive Disorder)”.</a>
+<span>(2015, Jul. 22). Mayo Clinic. Retrieved from http://www.mayoclinic.org/diseases-conditions/depression/basics/lifestyle-home-remedies/con-20032977</span>
+</li>
+<li id='reference13'>
+<span>13.</span>
+<a href='http://www.everydayhealth.com/hs/major-depression-living-well/fight-depression-fatigue/'>“How to Fight Depression Fatigue”.</a>
+<span>Everyday Health. http://www.everydayhealth.com/hs/major-depression-living-well/fight-depression-fatigue/</span>
+</li>
+<li id='reference14'>
+<span>14.</span>
+<a href='http://www.medicinenet.com/emotional_eating/page4.htm'>“Emotional Eating cont’d”.</a>
+<span>(2014, Dec. 11). MedicineNet.  Retrieved from http://www.medicinenet.com/emotional_eating/page4.htm</span>
+</li>
+<li id='reference15'>
+<span>15.</span>
+<a href='http://www.kcbj.com/knee/typical-knee-conditions/ligament-tear-acl-mcl-lcl-and-pcl/'>“Ligament Tear: A Closer Look”.</a>
+<span>(2016) Kansas City Bone and Joint Clinic. http://www.kcbj.com/knee/typical-knee-conditions/ligament-tear-acl-mcl-lcl-and-pcl/</span>
+</li>
+<li id='reference16'>
+<span>16.</span>
+<a href='http://www.emoryhealthcare.org/acl-program/surgical-recovery/acl-rehab-expectations.html'>“Patient Education Program: Surgical Recovery.”</a>
+<span>(2016) Emory Healthcare. http://www.emoryhealthcare.org/acl-program/surgical-recovery/acl-rehab-expectations.html</span>
+</li>
+<li id='reference17'>
+<span>17.</span>
+<a href='http://www.moveforwardpt.com/symptomsconditionsdetail.aspx?cid=d8e73ca8-71f4-48a7-92f8-675bca38232c#.VmtPJBorLa4'>http://www.moveforwardpt.com/symptomsconditionsdetail.aspx?cid=d8e73ca8-71f4-48a7-92f8-675bca38232c#.VmtPJBorLa4</a>
+</li>
+<li id='reference18'>
+<span>18.</span>
+<a href='http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/choosing-what-to-eat.html'>“Choosing What, How Much, and When to Eat”.</a>
+<span>(2016). American Diabetes Association. Retrieved from http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/choosing-what-to-eat.html</span>
+</li>
+<li id='reference19'>
+<span>19.</span>
+<a href='http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/getting-active.html'>“Getting Active”.</a>
+<span>(2016) American Diabetes Association. Retrieved from http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/getting-active.html</span>
+</li>
+<li id='reference20'>
+<span>20.</span>
+<a href='http://diabetes.niddk.nih.gov/dm/pubs/medicines_ez/'>“What I need to know about diabetes medicines”.</a>
+<span>NIH: National Institute of Diabetes and Digestive Kidney Disease. http://diabetes.niddk.nih.gov/dm/pubs/medicines_ez/</span>
+</li>
+<li id='reference21'>
+<span>21.</span>
+<a href='http://ndep.nih.gov/i-have-diabetes/manageyourdiabetes.aspx'>“Step 3: Manage your diabetes”.</a>
+<span>NIH: National Institute of Diabetes and Digestive Kidney Disease. Retrieved from: http://ndep.nih.gov/i-have-diabetes/manageyourdiabetes.aspx</span>
+</li>
+<li id='reference22'>
+<span>22.</span>
+<a href='http://www.mayoclinic.org/diseases-conditions/obesity/basics/treatment/con-20014834'>“Obesity: Treatment an Drugs”.</a>
+<span>(2015, Jun. 10) Mayo Clinic. http://www.mayoclinic.org/diseases-conditions/obesity/basics/treatment/con-20014834</span>
+</li>
+<li id='reference23'>
+<span>23.</span>
+<a href='http://www.mayoclinic.org/healthy-lifestyle/weight-loss/multimedia/low-calorie-foods/sls-20076175?s=1'>“Slideshow: Low-Calorie-Density Foods for Weight Loss”.</a>
+<span>(2016). Mayo Clinic. Retrieved from http://www.mayoclinic.org/healthy-lifestyle/weight-loss/multimedia/low-calorie-foods/sls-20076175?s=1</span>
+</li>
+<li id='reference24'>
+<span>24.</span>
+<a href='http://www.mayoclinic.org/healthy-lifestyle/weight-loss/multimedia/low-calorie-foods/sls-20076175?s=1'>“Childhood Obesity Facts”.</a>
+<span>(2015, Aug. 27). Centers for Disease Control and Prevention. Retrieved from http://www.cdc.gov/healthyschools/obesity/facts.htm</span>
+</li>
+<li id='reference25'>
+<span>25.</span>
+<a href='http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/PreventionTreatmentofHighBloodPressure/Prevention-Treatment-of-High-Blood-Pressure_UCM_002054_Article.jsp#.VqGlp1MrIdU'>“Prevention and treatment of high blood pressure”.</a>
+<span>(2016). American Heart Association. Retrieved from http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/PreventionTreatmentofHighBloodPressure/Prevention-Treatment-of-High-Blood-Pressure_UCM_002054_Article.jsp#.VqGlp1MrIdU</span>
+</li>
+<li id='reference26'>
+<span>26. Dickerson L.M. , PHARM.D., and Gibson, MV M.D., PH.D., Medical University of South Carolina, Charleston, South Carolina.</span>
+<a href='http://www.aafp.org/afp/2005/0201/p469.html'>“Management of hypertension in older persons”.</a>
+<span>Am Fam Physician. 2005 Feb 1;71(3):469-476. Retrieved from http://www.aafp.org/afp/2005/0201/p469.html</span>
+</li>
+<li id='reference27'>
+<span>27.</span>
+<a href='http://www.mayoclinic.org/diseases-conditions/high-blood-pressure/basics/risk-factors/con-20019580'>“High blood pressure (hypertension)”.</a>
+<span>(2015, Nov. 10) Mayo Clinic. http://www.mayoclinic.org/diseases-conditions/high-blood-pressure/basics/risk-factors/con-20019580</span>
+</li>
+<li id='reference28'>
+<span>28.</span>
+<a href='http://www.webmd.com/hypertension-high-blood-pressure/guide/hypertension-home-monitoring'>“Checking your blood pressure at home.”</a>
+<span>WebMD. http://www.webmd.com/hypertension-high-blood-pressure/guide/hypertension-home-monitoring</span>
+</li>
+<li id='reference29'>
+<span>29. Godman, H. (2013, Jul.3).</span>
+<a href='http://www.health.harvard.edu/blog/checking-blood-pressure-at-home-pays-off-201307036436'>“Checking blood pressure at home pays off.”</a>
+<span>Harvard Health Publications, Harvard Medical School. Retrieved from http://www.health.harvard.edu/blog/checking-blood-pressure-at-home-pays-off-201307036436</span>
+</li>
+<li id='reference30'>
+<span>30.</span>
+<a href='http://www.cdc.gov/std/tg2015/chlamydia.htmh.harvard.edu/blog/checking-blood-pressure-at-home-pays-off-201307036436'>“Chlamydial Infections in Adolescents and Adults.”</a>
+<span>(2015. Jun. 4) Centers for Disease Control and Prevention. Retrived from http://www.cdc.gov/std/tg2015/chlamydia.htm</span>
+</li>
+<li id='reference31'>
+<span>31. Adler, R., Mehta, R. (2010).</span>
+<a href='http://www.caregiving.org/wp-content/uploads/2010/01/Catalyzing-Technology-to-Support-Family-Caregiving_FINAL.pdf'>“Catalyzing Technology to Support Family Caregiving.”</a>
+<span>The National Alliance for Caregiving. Retrieved from http://www.caregiving.org/wp-content/uploads/2010/01/Catalyzing-Technology-to-Support-Family-Caregiving_FINAL.pdf</span>
+</li>
+<li id='reference32'>
+<span>32. Fox, S., Brenner, J. (2012).</span>
+<a href='http://www.pewinternet.org/files/old-media/Files/Reports/2012/PIP_Family_Caregivers_Online.pdf'>“Family Caregivers Online.”</a>
+<span>Pew Research Center. Retrieved from http://www.pewinternet.org/files/old-media/Files/Reports/2012/PIP_Family_Caregivers_Online.pdf</span>
+</li>
+<li id='reference33'>
+<span>33.</span>
+<a href='http://www.mayoclinic.org/diseases-conditions/dementia/basics/definition/con-20034399?utm_source=Google&amp;utm_medium=abstract&amp;utm_content=Dementia&amp;utm_campaign=Knowledge-panel'>“Dementia.”</a>
+<span>Mayo Clinic. (2014. Nov, 22). Retrieved from http://www.mayoclinic.org/diseases-conditions/dementia/basics/definition/con-20034399?utm_source=Google&utm_medium=abstract&utm_content=Dementia&utm_campaign=Knowledge-panel</span>
+</li>
+<li id='reference34'>
+<span>34.</span>
+<a href='http://www.alz.org/alzheimers_disease_10429.asple&amp;utm_medium=abstract&amp;utm_content=Dementia&amp;utm_campaign=Knowledge-panel'>“Treatments for Sleep Changes.”</a>
+<span>Alzheimer’s Association.  (2016). Retrieved from http://www.alz.org/alzheimers_disease_10429.asple&utm_medium=abstract&utm_content=Dementia&utm_campaign=Knowledge-panel</span>
+</li>
+<li id='reference35'>
+<span>35.</span>
+<a href='https://www.alzheimers.org.uk/site/scripts/documents_info.php?documentID=149'>“Eating and Drinking.”</a>
+<span>Alzheimer’s Society. Retrieved from https://www.alzheimers.org.uk/site/scripts/documents_info.php?documentID=149</span>
+</li>
+<li id='reference36'>
+<span>36.</span>
+<a href='http://www.webmd.com/alzheimers/tc/dementia-medications'>“Alzheimer’s Disease Health Center.”</a>
+<span>WebMD. Retrieved from http://www.webmd.com/alzheimers/tc/dementia-medications</span>
+</li>
+<li id='reference37'>
+<span>37.</span>
+<a href='http://www.mayoclinic.org/diseases-conditions/dementia/basics/definition/con-20034399?utm_source=Google&amp;utm_medium=abstract&amp;utm_content=Dementia&amp;utm_campaign=Knowledge-panel'>“Dementia: Treatment and Drugs.”</a>
+<span>Mayo Clinic. (2014. Nov, 22). Retrieved from http://www.mayoclinic.org/diseases-conditions/dementia/basics/definition/con-20034399?utm_source=Google&utm_medium=abstract&utm_content=Dementia&utm_campaign=Knowledge-panel</span>
+</li>
+<li id='reference38'>
+<span>38.</span>
+<a href='http://www.webmd.com/children/tc/growth-and-development-ages-11-to-14-years-when-to-call-a-doctor'>“Growth and Development, Ages 11 to 14 Years - When to Call a Doctor.”</a>
+<span>WebMD. (2014. Sep, 9). Retrieved from http://www.webmd.com/children/tc/growth-and-development-ages-11-to-14-years-when-to-call-a-doctor</span>
+</li>
+<li id='reference39'>
+<span>39.</span>
+<a href='http://teens.webmd.com/girls/facts-about-puberty-girls'>“Girls and Puberty.”</a>
+<span>WebMD. Retrieved from http://teens.webmd.com/girls/facts-about-puberty-girls</span>
+</li>
+<li id='reference40'>
+<span>40. Cespedes, A. (2015. Dec.11).</span>
+<a href='http://www.livestrong.com/article/429657-diet-exercise-plan-for-a-30-year-old-male/'>“Diet and Exercise Plan for a 30-Year-Old Man.”</a>
+<span>Livestrong.com. Retrieved from http://www.livestrong.com/article/429657-diet-exercise-plan-for-a-30-year-old-male/</span>
+</li>
+<li id='reference41'>
+<span>41.</span>
+<a href='http://www.ahrq.gov/patients-consumers/patient-involvement/healthy-men/healthy-men.htm'>“Men: Stay Healthy at Any Age.”</a>
+<span>Agency for Healthcare Research and Quality. Retrieved from http://www.ahrq.gov/patients-consumers/patient-involvement/healthy-men/healthy-men.html</span>
+</li>
+<li id='reference42'>
+<span>42.</span>
+<a href='https://en.wikipedia.org/wiki/Activities_of_daily_living'>“Activities of Daily Living.”</a>
+<span>Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Activities_of_daily_living</span>
+</li>
+<li id='reference43'>
+<span>43.</span>
+<a href='http://www.cdc.gov/healthyschools/physicalactivity/guidelines.htm'>“Youth Physical Activity Guidelines Toolkit.”</a>
+<span>Centers for Disease Control and Prevention. Retrieved from http://www.cdc.gov/healthyschools/physicalactivity/guidelines.htm</span>
+</li>
+<li id='reference44'>
+<span>44.</span>
+<a href='https://my.clevelandclinic.org/childrens-hospital/health-info/ages-stages/adolescence/hic-Teen-Issues-and-Preventive-Health-Care'>“Teen Health Issues and Preventative Care.”</a>
+<span>Cleveland Clinic Children’s. Retrieved from https://my.clevelandclinic.org/childrens-hospital/health-info/ages-stages/adolescence/hic-Teen-Issues-and-Preventive-Health-Care</span>
+</li>
+<li id='reference45'>
+<span>45.</span>
+<a href='https://www.healthychildren.org/English/ages-stages/teen/nutrition/Pages/A-Teenagers-Nutritional-Needs.aspx'>“A Teenager’s Nutritional Needs.”</a>
+<span>American Academy of Pediatrics. Retrieved from https://www.healthychildren.org/English/ages-stages/teen/nutrition/Pages/A-Teenagers-Nutritional-Needs.aspx</span>
+</li>
+<li id='reference46'>
+<span>46.</span>
+<a href='https://www.healthychildren.org/English/ages-stages/teen/fitness/Pages/How-Teens-Can-Stay-Fit.aspx'>“How Teens Can Stay Fit.”</a>
+<span>American Academy of Pediatrics. Retrieved from https://www.healthychildren.org/English/ages-stages/teen/fitness/Pages/How-Teens-Can-Stay-Fit.aspx</span>
+</li>
+<li id='reference47'>
+<span>47.</span>
+<a href='http://www.webmd.com/parenting/vitamins-for-kids-do-healthy-kids-need-vitamins'>“Vitamins for Kids: Do Health Kids Need Supplements?”</a>
+<span>WebMD. Retrieved from http://www.webmd.com/parenting/vitamins-for-kids-do-healthy-kids-need-vitamins</span>
+</li>
+<li id='reference48'>
+<span>48.</span>
+<a href='https://sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need'>“How Much Sleep Do We Really Need?”</a>
+<span>National Sleep Foundation. Retrieved from https://sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need</span>
+</li>
+<li id='reference49'>
+<span>49.</span>
+<a href='http://www.cdc.gov/vaccines/schedules/hcp/imz/child-adolescent-shell.html'>“Recomended Immunization Schedule for Persons Aged 0 Through 18 Years.”</a>
+<span>(2015). Centers for Disease Control and Prevention.  Retrieved from http://www.cdc.gov/vaccines/schedules/hcp/imz/child-adolescent-shell.html</span>
+</li>
+<li id='reference50'>
+<span>50.</span>
+<a href='http://www.cdc.gov/healthyschools/physicalactivity/toolkit/youth_pa_guidelines_communities.pdf'>“The Physical Activity Guidelines for Children and Adolescents.”</a>
+<span>Centers for Disease Control and Prevention. Retrieved from http://www.cdc.gov/healthyschools/physicalactivity/toolkit/youth_pa_guidelines_communities.pdf</span>
+</li>
+<li id='reference51'>
+<span>51. Kalra, G., Subramanyam, A., Pinto, C. “Sexuality: Desire, Activity, and intimacy in the elderly.” Indian J Psychiatry. 2011 Oct-Dec; 53(4): 300–306. doi:</span>
+<a href='http://www.indianjpsychiatry.org/article.asp?issn=0019-5545;year=2011;volume=53;issue=4;spage=300;epage=306;aulast=Kalra'>10.4103/0019-5545.91902</a>
+</li>
+<li id='reference52'>
+<span>52.</span>
+<a href='http://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/dash-diet/art-20048456'>“DASH diet: Healthy eating to lower your blood pressure.”</a>
+<span>(2013. May, 15). Mayo Clinic. Retrieved from http://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/dash-diet/art-20048456</span>
+</li>
+<li id='reference53'>
+<span>53.</span>
+<a href='https://www.nia.nih.gov/health/publication/sexuality-later-life'>“Sexuality later in life.”</a>
+<span>National Institute on Aging. Retrieved from https://www.nia.nih.gov/health/publication/sexuality-later-life</span>
+</li>
+<li id='reference54'>
+<span>54.</span>
+<a href='https://en.wikipedia.org/wiki/Medieval_medicine_of_Western_Europe'>“Medieval medicine of Western Europe.”</a>
+<span>Wikipedia. Retrieved 2016. Jan, 22 from https://en.wikipedia.org/wiki/Medieval_medicine_of_Western_Europe</span>
+</li>
+<li id='reference55'>
+<span>55. Webster, Charles (2008). Paracelsus: Medicine, Magic, and Mission at the End of Time. Yale Univ. Press</span>
+</li>
+<li id='reference56'>
+<span>56. Presti, Roberto Lo (2010). Presti, Roberto Lo (2010). "Anatomy as Epistemology: The Body of Man and the Body of Medicine in Vesalius and his Ancient Sources". Renaissance and Reformation/Renaissance et Reforme</span>
+</li>
+<li id='reference57'>
+<span>57.</span>
+<a href='http://www.britannica.com/topic/history-of-medicine'>Encyclopædia Britannica.</a>
+<span>Retrieved October 11, 2015 from http://www.britannica.com/topic/history-of-medicine</span>
+</li>
+<li id='reference58'>
+<span>58.</span>
+<a href='https://en.wikipedia.org/wiki/Nursing care plan'>"Nursing care plan"</a>
+<span>Wikipedia 28 Sep. 2015. Retrieved from https://en.wikipedia.org/wiki/Nursing care plan</span>
+</li>
+<li id='reference59'>
+<span>59.</span>
+<a href='http://www.nursingcenter.com/pdfjournal?AID=798082&amp;an=00000446-200806000-00002&amp;Journal_ID=54030&amp;Issue_ID=798079'>"Death to Nursing Care Plans!"</a>
+<span>Lippincott Nursing Center 28 Sep. 2015. Retrieved from http://www.nursingcenter.com/pdfjournal?AID=798082&an=00000446-200806000-00002&Journal_ID=54030&Issue_ID=798079</span>
+</li>
+<li id='reference60'>
+<span>60. Exchange, Center for International Rehabilitation Research Information and.</span>
+<a href='http://cirrie.buffalo.edu/encyclopedia/en/article/18/'>"Life Care Planning | International Encyclopedia of Rehabilitation".</a>
+<span>cirrie.buffalo.edu. Retrieved 2015-10-02.</span>
+</li>
+<li id='reference61'>
+<span>61.</span>
+<a href='http://www.rehabpro.org/sections/ialcp/focus/standards/ialcpSOP_pdf'>"International Academy of Life Care Planners Standards of Practice"</a>
+<span>IARP 28 Sep. 2015 Retrieved from http://www.rehabpro.org/sections/ialcp/focus/standards/ialcpSOP_pdf</span>
+</li>
+<li id='reference62'>
+<span>62. Deutsch, P.M. (2002)</span>
+<a href='http://archive.scijournal.com/doi/pdf/10.1310/UH3C-RUF5-EV1K-869D'>"Historical Perspective of Life Care Planning"</a>
+<span>Top Spinal Cord Inj Rehabil2002;7(4):1-4</span>
+</li>
+<li id='reference63'>
+<span>63.</span>
+<a href='http://cirrie.buffalo.edu/encyclopedia/en/article/18/'>"Life Care Planning"</a>
+<span>International Encyclopedia of Rehabilitation 28 Sep. 2015. Retrieved from http://cirrie.buffalo.edu/encyclopedia/en/article/18/</span>
+</li>
+<li id='reference64'>
+<span>64.</span>
+<a href='https://en.wikipedia.org/w/index.php?title=Experimental_analysis_of_behavior&amp;oldid=682715574'>“Experimental Analysis of Behavior.”</a>
+<span>Retrieved 2016, Jan. from https://en.wikipedia.org/w/index.php?title=Experimental_analysis_of_behavior&oldid=682715574</span>
+</li>
+<li id='reference65'>
+<span>65.</span>
+<a href='http://currentnursing.com/nursing_theory/Henderson.html'>“Current Nursing: Nursing Theories”.</a>
+<span>Retrieved from  http://currentnursing.com/nursing_theory/Henderson.html</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<!-- - # END Credits. Copy to this %%%%%line. -->
+
+</div>
+</div>
+<div class="twenty-eighteen">
+  <div class="footer">
+    <div class="max-width content-padding pad-vertical pad-top--double">
+      <div class="pure-g margin-top">
+        <div class="pure-u-1 pure-u-lg-1-2">
+          <div className="pure-g" style="display: flex;">
+            <div class="pure-u-1-2 margin-bottom--double">
+              <ul class="list--unstyled">
+                <li><a href="https://www.goinvo.com/">Home</a></li>
+                <li><a href="https://www.goinvo.com/work/">Work</a></li>
+                <li><a href="https://www.goinvo.com/services/">Services</a></li>
+              </ul>
+            </div>
+            <div class="pure-u-1-2">
+              <ul class="list--unstyled">
+                <li><a href="https://www.goinvo.com/about/">About</a></li>
+                <li><a href="https://www.goinvo.com/about/careers/">Careers</a></li>
+                <li><a href="https://www.goinvo.com/about/open-office-hours/">Open Office Hours</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-lg-1-2">
+          <div className="pure-g" style="display: flex;">
+            <div class="pure-u-1-2 margin-bottom--double">
+              <ul class="list--unstyled">
+                <li><a href="https://www.goinvo.com/vision/">Vision</a></li>
+                <li><a target="blank" href="http://thedigitalife.com/">The Digital Life</a></li>
+              </ul>
+            </div>
+            <div class="pure-u-1-2">
+              <ul class="list--unstyled">
+                <li><a href="https://www.goinvo.com/contact/">Contact Us</a></li>
+                <li>
+                  <a target="blank" href="https://www.google.com/maps/place/661+Massachusetts+Ave,+Arlington,+MA+02476/@42.4161234,-71.1563006,17z/">
+                    661 Mass Ave<br/>
+                    Arlington, MA 02476
+                  </a>
+                </li>
+                <li><a href="mailto:info@goinvo.com">info@goinvo.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__social-links">
+        <ul class="social-links list--unstyled container container--justify-space-around container--align-center">
+          <li>
+            <a href="mailto:hello@goinvo.com">
+              <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g>
+                  <path d="M16.5,0C7.387,0,0,7.387,0,16.5C0,25.613,7.387,33,16.5,33C25.613,33,33,25.613,33,16.5C33,7.387,25.613,0,16.5,0z
+                    M25.5,22.125c0,0.621-0.504,1.125-1.125,1.125H16.5H8.625c-0.621,0-1.125-0.504-1.125-1.125v-9.408l8.375,5.601
+                    c0.378,0.253,0.873,0.253,1.25,0l8.375-5.601V22.125z M17.125,15.351c-0.378,0.253-0.872,0.253-1.25,0L7.5,9.75h18L17.125,15.351z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/goinvo/">
+              <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <path d="M32.938,16.5c0,9.079-7.359,16.438-16.438,16.438S0.062,25.578,0.062,16.5c0-9.078,7.359-16.438,16.438-16.438
+                S32.938,7.421,32.938,16.5z M7.855,8.407c0,1.196,0.966,2.167,2.164,2.167c1.193,0,2.162-0.971,2.162-2.167S11.213,6.24,10.02,6.24
+                C8.821,6.24,7.855,7.211,7.855,8.407z M14.225,24.24h3.727v-5.945c0-1.57,0.296-3.09,2.236-3.09c1.914,0,1.938,1.795,1.938,3.189
+                v5.846h3.729v-6.594c0-3.238-0.697-5.728-4.475-5.728c-1.814,0-3.031,0.997-3.529,1.942h-0.051v-1.645h-3.576V24.24z M8.109,24.248
+                h3.734V12.226H8.109V24.248z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/goinvo">
+              <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <rect fill-opacity="0" width="33" height="33"/>
+                <path d="M33,16.5C33,25.613,25.613,33,16.5,33C7.387,33,0,25.613,0,16.5C0,7.387,7.387,0,16.5,0C25.613,0,33,7.387,33,16.5z
+                M26.791,10.826c-0.712,0.332-1.477,0.555-2.28,0.656c0.819-0.515,1.449-1.332,1.745-2.304c-0.767,0.477-1.616,0.824-2.52,1.011
+                c-0.725-0.81-1.757-1.315-2.898-1.315c-2.192,0-3.97,1.865-3.97,4.166c0,0.327,0.035,0.645,0.103,0.949
+                c-3.299-0.174-6.224-1.832-8.182-4.352c-0.342,0.615-0.538,1.331-0.538,2.094c0,1.445,0.701,2.72,1.767,3.467
+                c-0.651-0.021-1.263-0.209-1.798-0.521c0,0.017,0,0.035,0,0.052c0,2.018,1.368,3.702,3.184,4.085
+                c-0.333,0.095-0.684,0.146-1.046,0.146c-0.255,0-0.504-0.027-0.747-0.076c0.505,1.655,1.971,2.859,3.708,2.894
+                c-1.358,1.117-3.07,1.783-4.93,1.783c-0.32,0-0.636-0.02-0.947-0.058c1.757,1.182,3.843,1.871,6.085,1.871
+                c7.301,0,11.295-6.348,11.295-11.852c0-0.181-0.005-0.36-0.012-0.539C25.586,12.395,26.259,11.661,26.791,10.826"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <svg class="logo" viewBox="0 0 64 35" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.1895 19.1783C60.5875 19.7481 60.7832 20.5109 60.7832 21.4694C60.7832 23.0216 60.4421 24.3102 59.7623 25.3339C59.0786 26.3576 58.26 26.8688 57.2998 26.8688C56.6928 26.8688 56.1849 26.588 55.7763 26.0262C55.3676 25.4644 55.1613 24.7376 55.1613 23.8456C55.1613 22.352 55.5025 21.0567 56.1849 19.9624C56.8687 18.8695 57.678 18.3224 58.6197 18.3224C59.2703 18.3224 59.794 18.6086 60.1895 19.1783ZM54.4869 18.6325C53.3694 19.9704 52.8113 21.6344 52.8113 23.6246C52.8113 25.2261 53.2159 26.4774 54.0253 27.3774C54.8334 28.2773 55.9522 28.7272 57.3778 28.7272C58.9966 28.7272 60.3614 28.059 61.4696 26.7211C62.5792 25.3832 63.1333 23.6739 63.1333 21.5919C63.1333 20.0889 62.722 18.8868 61.8981 17.9816C61.0742 17.0777 59.9831 16.625 58.6183 16.625C56.9837 16.6264 55.6044 17.2946 54.4869 18.6325ZM50.4824 16.9725L46.6008 24.2077L44.9464 16.9725H42.6743L45.4397 28.5928H46.5783L52.8113 16.9725H50.4824ZM32.0613 16.9725L30.3593 28.3691H32.6247L33.7356 21.1113C33.7541 20.9848 34.0041 20.696 34.4841 20.2433C34.9655 19.7894 35.3689 19.4512 35.6956 19.2289C36.0222 19.0053 36.329 18.8402 36.6147 18.7337C36.9016 18.6259 37.1595 18.5726 37.3896 18.5726C37.7864 18.5726 38.117 18.7297 38.3815 19.0426C38.6447 19.3567 38.7796 19.8107 38.7796 20.4057C38.7796 20.6201 38.7558 20.8557 38.7135 21.1113L37.6039 28.3691H39.8706L41.0358 21.1858C41.0887 20.8717 41.1151 20.5708 41.1151 20.2819C41.1151 19.2569 40.8559 18.4222 40.3375 17.7739C39.8164 17.1256 39.0877 16.8008 38.1448 16.8008C36.7549 16.8008 35.4139 17.5436 34.1205 19.0306L34.0583 18.9906L34.3664 16.9738H32.0613V16.9725ZM26.7952 16.9725L25.0931 28.3691H27.385L29.0884 16.9725H26.7952ZM27.4353 14.2794C27.6945 14.523 28.0052 14.6429 28.3663 14.6429C28.7273 14.6429 29.0368 14.5217 29.296 14.2794C29.5565 14.0345 29.6861 13.7443 29.6861 13.4061C29.6861 13.0587 29.5565 12.7645 29.296 12.5209C29.0368 12.2759 28.7273 12.1548 28.3663 12.1548C28.0052 12.1548 27.6945 12.2772 27.4353 12.5209C27.176 12.7645 27.0464 13.0587 27.0464 13.4061C27.0464 13.7443 27.176 14.0358 27.4353 14.2794ZM15.3728 26.5533C14.8583 25.8891 14.6004 24.9772 14.6004 23.823C14.6004 22.1217 15.0012 20.6893 15.8013 19.5298C16.6027 18.369 17.6633 17.7899 18.9832 17.7899C19.9063 17.7899 20.6455 18.1253 21.1997 18.7989C21.7551 19.4712 22.0315 20.3791 22.0315 21.5173C22.0315 23.2013 21.5845 24.6284 20.6919 25.7972C19.7992 26.9647 18.7227 27.5491 17.465 27.5491C16.5842 27.5504 15.8859 27.2176 15.3728 26.5533ZM14.9377 18.7191C13.8678 20.0317 13.3335 21.725 13.3335 23.7964C13.3335 25.282 13.7276 26.4535 14.5145 27.3081C15.3027 28.1641 16.3038 28.5915 17.5178 28.5915C19.0837 28.5915 20.4392 27.9405 21.5832 26.6385C22.7271 25.3379 23.2985 23.6313 23.2985 21.5173C23.2985 20.0556 22.9136 18.8961 22.1439 18.0375C21.3743 17.1788 20.3374 16.7489 19.0361 16.7489C17.3711 16.7502 16.0062 17.4065 14.9377 18.7191ZM8.57381 32.7103C7.81205 33.1429 6.7144 33.3599 5.28081 33.3599C4.17124 33.3599 3.29576 33.1948 2.65435 32.8647C2.01162 32.5345 1.69024 32.0926 1.69024 31.5401C1.69024 30.7227 2.23776 30.0664 3.33279 29.5712C4.42914 29.076 5.29272 28.8284 5.9262 28.8284C6.14705 28.8284 6.83344 29.0081 7.98533 29.3689C9.13722 29.7283 9.71513 30.2754 9.71513 31.0089C9.71513 31.7105 9.33424 32.2776 8.57381 32.7103ZM9.04198 18.5087C9.66752 19.0545 9.97965 19.7441 9.97965 20.5774C9.97965 21.4614 9.65429 22.3067 9.0023 23.1161C8.35164 23.9242 7.4272 24.3302 6.23035 24.3302C5.33369 24.3302 4.61163 24.032 4.06676 23.4383C3.52057 22.8446 3.24815 22.1363 3.24815 21.319C3.24815 20.3378 3.61052 19.4859 4.33656 18.7683C5.06261 18.0508 5.909 17.69 6.87706 17.69C7.69569 17.6913 8.41776 17.9643 9.04198 18.5087ZM7.14158 16.7502C5.75957 16.7502 4.57594 17.1961 3.59068 18.0881C2.60543 18.98 2.11212 20.041 2.11212 21.2724C2.11212 23.0642 2.97969 24.2596 4.71348 24.8627V24.9119C3.04978 25.2021 2.2179 25.7719 2.2179 26.6212C2.2179 27.4559 3.04978 28.0297 4.71348 28.3438V28.3944C1.94153 29.0374 0.555542 30.0278 0.555542 31.3657C0.555542 32.1818 0.981368 32.8607 1.8357 33.3958C2.68871 33.9323 3.88954 34.1999 5.4395 34.1999C7.15478 34.1999 8.48523 33.8817 9.43213 33.2467C10.3777 32.6091 10.8512 31.837 10.8512 30.9304C10.8512 30.2289 10.5496 29.6311 9.94659 29.1399C9.34353 28.65 8.24451 28.2214 6.64693 27.8553C5.05068 27.4919 4.10245 27.2443 3.80225 27.1165C3.50336 26.9887 3.35394 26.785 3.35394 26.5054C3.35394 26.2418 3.51001 26.0129 3.82344 25.8198C4.13555 25.6255 4.8457 25.4564 5.9513 25.3113C7.05823 25.1675 7.93901 24.9679 8.59629 24.7176C9.25225 24.466 9.84476 23.9708 10.3738 23.2373C10.9028 22.5038 11.1672 21.6691 11.1672 20.7359C11.1672 19.3408 10.5734 18.3077 9.38584 17.6394V17.5902H12.7913L12.9367 16.7475H7.14158V16.7502Z" />
+              <path d="M24.1686 12.8831C24.2096 12.5715 24.3035 12.2787 24.4239 11.9991L15.091 10.9541C15.0342 11.235 14.9747 11.5146 14.939 11.8021C14.8927 12.1589 14.8702 12.5117 14.8583 12.8618L24.1911 13.9068C24.1435 13.578 24.1237 13.2412 24.1686 12.8831Z" />
+              <path d="M25.7041 10.3685C25.9699 10.1768 26.2556 10.029 26.5518 9.91189L20.8082 3.06274C20.5318 3.24379 20.2554 3.42349 19.983 3.6285C19.7092 3.83218 19.4593 4.04516 19.208 4.25816L24.9516 11.1087C25.1645 10.8438 25.4039 10.5908 25.7041 10.3685Z" />
+              <path d="M28.6863 9.6082C29.0196 9.64814 29.3317 9.73466 29.6293 9.84781L30.7481 1.05106C30.3738 0.980509 29.9956 0.916625 29.6068 0.875357C29.3079 0.842076 29.013 0.831427 28.7181 0.818115L27.5979 9.63217C27.9457 9.58691 28.3054 9.5656 28.6863 9.6082Z" />
+              <path d="M31.3669 11.0484C31.5719 11.2974 31.7293 11.5676 31.8536 11.8445L39.2966 6.34785C39.0916 6.06963 38.8827 5.79408 38.6486 5.52384C38.4462 5.28555 38.232 5.06988 38.0164 4.85156L30.5774 10.3442C30.8617 10.5439 31.1302 10.7662 31.3669 11.0484Z" />
+            </svg>
+          </li>
+          <li>
+            <a href="https://medium.com/@goinvo">
+              <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <path d="M16.5,0C7.387,0,0,7.387,0,16.5C0,25.613,7.387,33,16.5,33C25.613,33,33,25.613,33,16.5C33,7.387,25.613,0,16.5,0z
+                M26.167,11.323h-0.732c-0.273,0-0.657,0.393-0.657,0.645v9.114c0,0.252,0.384,0.594,0.657,0.594h0.732v2.164h-6.645v-2.164h1.392
+                v-9.58h-0.068L17.598,23.84h-2.514l-3.206-11.744h-0.081v9.58h1.391v2.164H7.625v-2.164h0.712c0.293,0,0.679-0.342,0.679-0.594
+                v-9.114c0-0.252-0.385-0.645-0.679-0.645H7.625V9.16h6.956l2.284,8.499h0.062l2.305-8.499h6.935V11.323z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.flickr.com/photos/juhansonin/">
+              <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <path d="M16.5,0C7.387,0,0,7.387,0,16.5C0,25.613,7.387,33,16.5,33C25.613,33,33,25.613,33,16.5C33,7.387,25.613,0,16.5,0z
+                  M10.875,20.75c-2.295,0-4.156-1.86-4.156-4.156c0-2.295,1.861-4.156,4.156-4.156s4.156,1.861,4.156,4.156
+                  C15.031,18.89,13.17,20.75,10.875,20.75z M22.125,20.75c-2.295,0-4.156-1.86-4.156-4.156c0-2.295,1.861-4.156,4.156-4.156
+                  s4.156,1.861,4.156,4.156C26.281,18.89,24.42,20.75,22.125,20.75z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://soundcloud.com/involution-studios">
+              <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <rect fill-opacity="0" width="33" height="33"/>
+                <path d="M33,16.5C33,25.613,25.613,33,16.5,33C7.387,33,0,25.613,0,16.5C0,7.387,7.387,0,16.5,0C25.613,0,33,7.387,33,16.5z
+                  M14.964,9.569v11.178c0,0.622,0.5,1.125,1.122,1.125c2.214,0,7.066,0,8.629,0c2.049-0.001,4.887-0.384,4.318-4.221
+                  c-0.568-3.837-5.244-2.687-5.244-2.687s0.005-4.638-4.602-6.207c-1.303-0.444-2.625-0.333-3.435-0.188
+                  C15.276,8.656,14.964,9.084,14.964,9.569z M12.703,9.381c-0.26,0.13-0.424,0.396-0.424,0.687v11.421
+                  c0,0.424,0.344,0.768,0.768,0.768s0.767-0.344,0.767-0.768V10.067C13.813,9.497,13.213,9.125,12.703,9.381z M10.36,13.814
+                  c-0.424,0-0.768,0.343-0.768,0.767v6.907c0,0.424,0.344,0.768,0.768,0.768s0.767-0.344,0.767-0.768v-6.907
+                  C11.127,14.158,10.784,13.814,10.36,13.814z M7.675,12.663c-0.424,0-0.768,0.344-0.768,0.768v7.674c0,0.424,0.344,0.768,0.768,0.768
+                  s0.768-0.344,0.768-0.768V13.43C8.442,13.006,8.099,12.663,7.675,12.663z M4.796,15.732c-0.424,0-0.768,0.344-0.768,0.768v3.453
+                  c0,0.424,0.344,0.768,0.768,0.768s0.767-0.344,0.767-0.768V16.5C5.563,16.076,5.22,15.732,4.796,15.732z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  (function(d,s,i,r) {if (d.getElementById(i)){return;} var n=d.createElement(s),e=d.getElementsByTagName(s)[0]; n.id=i;n.src='https://js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/356419.js'; e.parentNode.insertBefore(n, e); })(document,"script","hs-analytics",300000);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-10273473-2', 'auto'); ga('send', 'pageview');
+</script>
+<script>
+  window._chatlio = window._chatlio||[];
+  !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline", "page"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.3");
+  	n.setAttribute('data-widget-id','413f13c1-0a3b-447f-45a6-f99b340d8c78');
+  	c.parentNode.insertBefore(n,c);
+  }();
+</script>
+<script>
+  _linkedin_data_partner_id = "101348";
+</script>
+<script>
+  (function(){var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})();
+</script>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=101348&fmt=gif" />
+</div>
+</body>
+</html>

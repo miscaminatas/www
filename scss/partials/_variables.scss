@@ -1,0 +1,43 @@
+// Colores
+$white: rgb(242, 242, 242);
+$white_gradient: linear-gradient(
+  145deg,
+  rgba(231, 231, 231, 1) 3%,
+  rgba(250, 250, 250, 1) 98%
+);
+$orange: rgb(238, 124, 7);
+$orange_gradient: linear-gradient(
+  145deg,
+  rgb(226, 116, 5) 3%,
+  rgb(252, 129, 7) 98%
+);
+$green: rgb(78, 172, 49);
+$green_gradient: linear-gradient(
+  145deg,
+  rgba(78, 172, 49, 1) 3%,
+  rgba(31, 155, 55, 1) 98%
+);
+$blue: rgb(58, 99, 128);
+$blue_gradient: linear-gradient(
+  145deg,
+  rgb(58, 99, 128) 3%,
+  rgb(44, 46, 85) 98%
+);
+
+// Boton
+
+@mixin botones($hover) {
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0px;
+  font-weight: bold;
+  background-color: $green;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $white;
+    box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.4);
+    background-color: $hover;
+  }
+}

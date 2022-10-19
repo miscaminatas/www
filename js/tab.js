@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){t("#tabs").tab()});

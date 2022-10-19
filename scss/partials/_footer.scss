@@ -1,0 +1,94 @@
+footer {
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-areas: "first second last" "copyright copyright copyright";
+  bottom: 0;
+  width: 100%;
+  background: $white;
+  padding: 35px 0px 15px 0px;
+  font-size: 1.3rem;
+  color: $orange;
+  justify-items: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 25px 20px 15px 20px;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-areas: "first" "last" "second" "copyright";
+    justify-items: left;
+    align-items: center;
+  }
+
+  .footerDiv {
+    margin-bottom: 2rem;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      align-items: center;
+    }
+  }
+
+  ul {
+    list-style: none;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: $orange;
+    font-size: 1.3rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .first {
+    grid-area: first;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 0rem;
+
+    }
+  }
+
+  .second {
+    grid-area: second;
+    justify-self: center;
+    
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1rem;
+
+    }
+  }
+
+  .last {
+    grid-area: last;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 0rem;
+
+    }
+
+    .social_media {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+  }
+
+  .copyright {
+    grid-area: copyright;
+    font-size: 1rem;
+  }
+}

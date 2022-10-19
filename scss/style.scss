@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./partials/variables";
+@import "./partials/header";
+@import "./partials/index";
+@import "./partials/contacto";
+@import "./partials/nosotros";
+@import "./partials/servicios";
+@import "./partials/footer";
+
+body {
+  text-align: center;
+  background: $white;
+  background: $white_gradient;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Martel Sans", sans-serif;
+}
+
+p {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 6rem;
+  }
+}

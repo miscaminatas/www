@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="textoJarraNivel03" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="1280px" height="700px" viewBox="0 0 1280 700" enable-background="new 0 0 1280 700" xml:space="preserve">
+<g>
+	<g>
+		<line fill="none" stroke="#E2D4D5" stroke-miterlimit="10" x1="772.999" y1="295.5" x2="661.999" y2="295.5"/>
+		<circle fill="none" stroke="#E2D4D5" stroke-miterlimit="10" cx="658.999" cy="295.5" r="3.205"/>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1 0 0 1 779.5996 296.5)" fill="#D0E9EF" font-family="'NeoSansStd-Bold'" font-size="10">NIVEL 03</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 779.5996 313.0352)"><tspan x="0" y="0" fill="#E4CA93" font-family="'NeoSansStd-Medium'" font-size="14">CAFÉ Y TÉ </tspan><tspan x="0" y="16" fill="#E4CA93" font-family="'NeoSansStd-Medium'" font-size="14">SIN AZÚCAR AÑADIDA.</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 779.5996 349.5)" fill="#F1DEAE" font-family="'NeoSansStd-Medium'" font-size="21">de 0 a 2 Vasos</text>
+		</g>
+		<g>
+			<g>
+				<g>
+					<g>
+						<polygon fill="#E6FFE5" points="781.417,367.395 780.49,359.301 784.402,359.301 784.402,356.173 779.6,356.173 
+							779.908,358.872 780.972,368.173 784.402,368.173 784.402,367.395 						"/>
+						<polygon fill="#D0E9EF" points="784.402,356.173 784.402,359.301 788.313,359.301 787.388,367.395 784.402,367.395 
+							784.402,368.173 787.832,368.173 788.896,358.872 789.205,356.173 						"/>
+						<polygon fill="#E4CA93" points="787.388,367.395 788.313,359.301 784.402,359.301 784.402,367.395 						"/>
+						<polygon fill="#F1DEAE" points="781.417,367.395 784.402,367.395 784.402,359.301 780.49,359.301 						"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<polygon fill="#E6FFE5" points="793.931,367.395 793.004,359.301 796.916,359.301 796.916,356.173 792.113,356.173 
+							792.422,358.872 793.485,368.173 796.916,368.173 796.916,367.395 						"/>
+						<polygon fill="#D0E9EF" points="796.916,356.173 796.916,359.301 800.827,359.301 799.901,367.395 796.916,367.395 
+							796.916,368.173 800.346,368.173 801.409,358.872 801.719,356.173 						"/>
+						<polygon fill="#E4CA93" points="799.901,367.395 800.827,359.301 796.916,359.301 796.916,367.395 						"/>
+						<polygon fill="#F1DEAE" points="793.931,367.395 796.916,367.395 796.916,359.301 793.004,359.301 						"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
